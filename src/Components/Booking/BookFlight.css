@@ -1,0 +1,116 @@
+.flight__card{
+    width: 505px;
+height: 701px;
+left: 137px;
+top: 99px;
+
+background: #FFFFFF;
+border: 0.5x solid #87ACE4;
+box-shadow: 0px 4px 64px rgba(0, 0, 0, 0.05);
+border-radius: 10px;
+margin-left: 100px;
+}
+
+.flight__text {
+    width: 155px;
+height: 38px;
+left: 172px;
+top: 135px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 300;
+font-size: 25px;
+line-height: 38px;
+/* identical to box height */
+margin-left: 2rem;
+/* margin-top: 8rem; */
+padding-top: 10px;
+color: #000000;
+}
+
+.flight__input1{
+    display: flex;
+}
+
+.flight__radio1 {
+    
+width: 121px;
+height: 39px;
+left: 166px;
+top: 208px;
+
+background: rgba(51, 193, 28, 0.2);
+border: 0.6px solid #000000;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+padding: 10px;
+margin-left: 35px;
+}
+
+
+.flight__radio2 {
+    
+    width: 121px;
+    height: 39px;
+    left: 166px;
+    top: 208px;
+    
+    background: rgba(51, 193, 28, 0.2);
+    border: 0.6px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 35px;
+    }
+
+    .flight__destination{
+        left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #FFFFFF;
+border: 0.6px solid #282828;
+border-radius: 6px;
+flex: 1;
+margin-top: 25px;
+margin-left: 25px;
+width: 50%;
+height: 50px;
+    }
+
+    .flight__text1 {
+        left: 0%;
+right: -30%;
+top: -42.37%;
+bottom: 101.69%;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height */
+
+ margin-left: 25px;
+ margin-top: 25px;
+color: #000000;
+    }
+
+
+    .flight__destination2 {
+        left: 0%;
+        right: 0%;
+        top: 0%;
+        bottom: 0%;
+        
+        background: #FFFFFF;
+        border: 0.6px solid #282828;
+        border-radius: 6px;
+        flex: 1;
+        margin-top: 25px;
+        margin-left: 250px;
+        width: 50%;
+        height: 50px;
+    }

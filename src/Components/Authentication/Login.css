@@ -1,0 +1,178 @@
+.login {
+ background-color: white;
+ display: flex;
+ object-fit: contain;
+ display: flex;
+ flex-direction: column;
+}
+
+.login__image1 {
+    left: -179px;
+    top: 276.32px;
+    width: 500.32px;
+    height: 404.55px;
+    left: -179px;
+    top: 276.32px;
+    transform: rotate(-5.07deg);
+}
+
+
+.form-box {
+    box-sizing: border-box;
+position: absolute;
+width: 605px;
+height: 701px;
+left: 827px;
+top: 126px;
+padding-right: 30px;
+background: #FFFFFF;
+border: 0.5px solid #87ACE4;
+box-shadow: 0px 4px 64px rgba(0, 0, 0, 0.05);
+border-radius: 10px;
+/* margin-left: 80px; */
+}
+
+.login_title{
+    width: 232px;
+height: 38px;
+left: 862px;
+top: 162px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 300;
+font-size: 25px;
+line-height: 38px;
+/* identical to box height */
+color: #000000;
+margin-left: 40px;
+
+
+}
+
+.login_title1{
+    width: 105px;
+height: 47px;
+left: 862px;
+top: 229px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 31px;
+line-height: 46px;
+/* identical to box height */
+margin-left: 40px;
+color: #000000;
+}
+
+.login_title2 {
+    width: 284px;
+height: 24px;
+left: 862px;
+top: 277px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height */
+margin-left: 40px;
+color: #000000;
+}
+
+.login__field1 h5 {
+    left: 0%;
+right: 7.8%;
+top: 0%;
+bottom: 73.91%;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height */
+margin-left: 40px;
+color: #000000;
+}
+
+.login__field1 {
+    left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #FFFFFF;
+margin-left: 40pxs;
+border-radius: 6px;
+
+}
+
+.login__field3 h5 {
+    left: 0%;
+right: 7.8%;
+top: 0%;
+bottom: 73.91%;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height */
+margin-left: 40px;
+
+color: #000000;
+
+}
+
+.info {
+    width: 269px;
+height: 24px;
+left: 939px;
+top: 763px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height */
+margin-left: 100px;
+text-align: center;
+color: #7D7D7D;
+}
+
+.login__button {
+    width: 423px;
+height: 57px;
+left: 862px;
+top: 650px;
+margin-left: 40px;
+background: #2e9b02;
+border-radius: 6px;
+text-align: center;
+}
+
+.login__text {
+    width: 43px;
+    height: 24px;
+    left: 1052px;
+    top: 667px;
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height */
+    
+    margin-left: 180px;
+    color: #FFFFFF;
+}
+
+.login__button:hover{
+    background-color: #000000;
+}

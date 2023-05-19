@@ -1,0 +1,445 @@
+.payment-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+.payment-payment {
+  width: 100%;
+  height: 900px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-color: rgba(255, 255, 255, 1);
+}
+.payment-plane13 {
+  top: 96.46517944335938px;
+  left: 278px;
+  width: 729px;
+  height: 404px;
+  position: absolute;
+}
+.payment-frame5 {
+  top: 148px;
+  left: 168px;
+  width: 579px;
+  height: 374px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.payment-sign-up-cont {
+  top: 103px;
+  left: 826px;
+  width: 505px;
+  height: 747px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.payment-cont {
+  top: 0px;
+  left: 0px;
+  width: 505px;
+  height: 747px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(255, 255, 255, 1);
+}
+.payment-body {
+  top: 28px;
+  left: 35px;
+  width: 430px;
+  height: 689px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.payment-signin {
+  top: 40px;
+  left: 0px;
+  width: 372px;
+  height: 72px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.payment-text {
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 31px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.payment-text02 {
+  top: 48px;
+  color: rgba(0, 0, 0, 1);
+  width: 372px;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.payment-text04 {
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 25px;
+  font-style: Light;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 300;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.payment-card-details {
+  top: 131px;
+  left: 6px;
+  width: 424px;
+  height: 515px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.payment-card-number {
+  top: 0px;
+  left: 0px;
+  width: 423px;
+  height: 92px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.payment-text06 {
+  top: 6px;
+  left: 1px;
+  color: rgba(0, 0, 0, 1);
+  width: 390px;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.payment-group20 {
+  top: 30px;
+  left: 15px;
+  width: 408px;
+  height: 59px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.payment-rectangle4 {
+  top: 0px;
+  left: 0px;
+  width: 408px;
+  height: 59px;
+  position: absolute;
+  border-color: rgba(40, 40, 40, 1);
+  border-style: solid;
+  border-width: 0.6000000238418579px;
+  border-radius: 6px;
+}
+.payment-text08 {
+  top: 19px;
+  left: 26.042552947998047px;
+  color: rgba(171, 171, 171, 1);
+  height: auto;
+  position: absolute;
+  font-size: 14px;
+  font-style: Light;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 300;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.payment-plane12 {
+  top: 46.66206359863281px;
+  left: 1px;
+  width: 39px;
+  height: 32px;
+  position: absolute;
+}
+.payment-cvv {
+  top: 96px;
+  left: 0px;
+  width: 423px;
+  height: 92px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.payment-text10 {
+  top: 6px;
+  color: rgba(0, 0, 0, 1);
+  width: 158px;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.payment-group201 {
+  top: 33px;
+  left: 0px;
+  width: 423px;
+  height: 59px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.payment-rectangle41 {
+  top: 0px;
+  left: 0px;
+  width: 423px;
+  height: 59px;
+  position: absolute;
+  border-color: rgba(40, 40, 40, 1);
+  border-style: solid;
+  border-width: 0.6000000238418579px;
+  border-radius: 6px;
+}
+.payment-text12 {
+  top: 19px;
+  left: 27px;
+  color: rgba(171, 171, 171, 1);
+  height: auto;
+  position: absolute;
+  font-size: 14px;
+  font-style: Light;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 300;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.payment-expiry-date {
+  top: 193px;
+  left: 1px;
+  width: 423px;
+  height: 92px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.payment-text14 {
+  top: 6px;
+  color: rgba(0, 0, 0, 1);
+  width: 206px;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.payment-group202 {
+  top: 33px;
+  left: 0px;
+  width: 371px;
+  height: 59px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.payment-rectangle42 {
+  top: 0px;
+  left: 0px;
+  width: 420px;
+  height: 59px;
+  position: absolute;
+  border-color: rgba(40, 40, 40, 1);
+  border-style: solid;
+  border-width: 0.6000000238418579px;
+  border-radius: 6px;
+}
+.payment-text16 {
+  top: 15px;
+  left: 26px;
+  color: rgba(171, 171, 171, 1);
+  height: auto;
+  position: absolute;
+  font-size: 20px;
+  font-style: Light;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 300;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.payment-postal-code {
+  top: 285px;
+  left: 1px;
+  width: 423px;
+  height: 92px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.payment-group22 {
+  top: 0px;
+  left: 0px;
+  width: 423px;
+  height: 92px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.payment-text18 {
+  top: 8px;
+  color: rgba(0, 0, 0, 1);
+  width: 390px;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.payment-rectangle5 {
+  top: 37px;
+  left: 0px;
+  width: 414px;
+  height: 59px;
+  position: absolute;
+  border-color: rgba(40, 40, 40, 1);
+  border-style: solid;
+  border-width: 0.6000000238418579px;
+  border-radius: 6px;
+}
+.payment-text20 {
+  top: 57px;
+  left: 12px;
+  color: rgba(171, 171, 171, 1);
+  height: auto;
+  position: absolute;
+  font-size: 14px;
+  font-style: Light;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 300;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.payment-sign-up-button {
+  top: 458px;
+  left: 0px;
+  width: 423px;
+  height: 57px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(28, 99, 17, 1);
+  cursor: pointer;
+}
+.payment-text22 {
+  top: 17px;
+  left: 190px;
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.payment-text24 {
+  top: 665px;
+  left: 115px;
+  color: rgba(125, 125, 125, 1);
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Light;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 300;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.payment-text25 {
+  font-weight: 300;
+}
+.payment-plane121 {
+  top: 324.11029052734375px;
+  left: -36px;
+  width: 759px;
+  height: 403px;
+  position: absolute;
+}
+.payment-plane14 {
+  top: 324.11029052734375px;
+  left: -36px;
+  width: 759px;
+  height: 403px;
+  position: absolute;
+}
+.payment-plane15 {
+  top: 324.11029052734375px;
+  left: -36px;
+  width: 759px;
+  height: 403px;
+  position: absolute;
+}
