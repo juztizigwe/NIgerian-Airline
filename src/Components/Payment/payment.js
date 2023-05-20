@@ -168,19 +168,7 @@ const Payment = (props) => {
                     
                   </div>
                 </div>
-                <div className="payment-postal-code">
-                  <div className="payment-group22">
-                    <span className="payment-text18">
-                      <span>Postal Code</span>
-                    </span>
-                    <input
-                    onChange={(e => setPostalCode(e.target.value))}
-                    className='payment-rectangle5'
-                    placeholder='Postal Code'
-                    />
-                    
-                  </div>
-                </div>
+                
                 <button onClick={submit} className="payment-sign-up-button">
                   <span className="payment-text22">
                     <span>Pay Now {paymentDetail.price} </span>
