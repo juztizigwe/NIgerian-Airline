@@ -11,6 +11,7 @@ import { collection, addDoc, getDocs } from 'firebase/firestore';
 
 import './booking.css'
 import { auth } from '../../firebase';
+import Navbar from "../LandingPage/Navbar";
 
 const Booking = (props) => {
   const navigate = useNavigate()
@@ -85,7 +86,8 @@ const Booking = (props) => {
     },[])
 
   return (
-    
+     <div>
+    <Navbar/>
     <div className="booking-container">
       <Helmet>
         <title>Bookings</title>
@@ -259,6 +261,7 @@ const Booking = (props) => {
       </div>
       
     </div>
+     </div>
   )
 }
 
