@@ -168,7 +168,7 @@ const Payment = (props) => {
                     
                   </div>
                 </div>
-                
+
                 <button onClick={submit} className="payment-sign-up-button">
                   <span className="payment-text22">
                     <span>Pay Now {paymentDetail.price} </span>
