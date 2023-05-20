@@ -1,6 +1,6 @@
 body {
-    margin: 0;
-    padding: 0;
+    margin: 20px;
+    padding: 20px;
     font-family:sans-serif;
     
 }
@@ -14,8 +14,8 @@ form {
     background-color: #ffff;
     box-shadow: 1px 1px 3px 2px #ddd;
     margin: 40px auto;
-    max-width: 600px;
-    max-height: 700px;
+    max-width: 500px;
+    max-height: 600px;
     padding: 20px;
     box-shadow: inset;
 

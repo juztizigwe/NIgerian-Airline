@@ -22,10 +22,10 @@ function Navbar() {
                 <span className="nav-icon"></span>
          </label>
          <ul className="menu" >
-            <li><Link href="/">Home </Link></li>
-            <li><a href="#">About </a></li>
-            <li><Link to="/login">Sign In </Link></li>
+            <li><Link to="/index">Home </Link></li>
             <li><Link to="/contact">Contact</Link>  </li>
+             <li><Link to="/login">Sign In </Link></li>
+             <li><Link to="/booking">Book A Flight</Link> </li>
          </ul>
     </nav>
   )

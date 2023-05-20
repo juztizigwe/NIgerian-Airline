@@ -46,11 +46,11 @@ const App = () => {
      
       <Routes>
         
-        <Route path="/" element={<LandingPage />} />
+        <Route path="/index" element={<LandingPage />} />
         <Route path="/contact" element={<Form />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<SignUp />} />
-        <Route path="/book" element={<Booking />} />
+        <Route path="/booking" element={<Booking />} />
         <Route path="flights" element={<Flight />} />
         <Route path="tickets" element={<Ticket />} />
         <Route path="/payment/:id" element={<Payment />} />
