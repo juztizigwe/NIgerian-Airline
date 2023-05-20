@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './landing.css'
 import { Link } from 'react-router-dom'
+import AirlineLogo from "../../images/Airline Logo.png"
 function Navbar() {
     const [nav, setNav] = useState(false)
     const changeBackground = () => {
@@ -15,17 +16,19 @@ function Navbar() {
     
     <nav className={nav ? 'nav active' : 'nav' }>
          <a href="#">
-            <h1>Travel</h1>
+            <img 
+            src={AirlineLogo}
+            />
          </a>
          <input type="checkbox" className="menu-btn" id="menu-btn"/>
          <label className='menu-icon' for="menu-btn">
                 <span className="nav-icon"></span>
          </label>
          <ul className="menu" >
-            <li><Link to="/index">Home </Link></li>
+            <li><Link href="/">Home </Link></li>
+            <li><a href="#">About </a></li>
+            <li><Link to="/login">Sign In </Link></li>
             <li><Link to="/contact">Contact</Link>  </li>
-             <li><Link to="/login">Sign In </Link></li>
-             <li><Link to="/booking">Book A Flight</Link> </li>
          </ul>
     </nav>
   )

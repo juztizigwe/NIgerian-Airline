@@ -8,19 +8,21 @@ import { useNavigate } from "react-router-dom";
 import { db } from '../../firebase';
 import { useParams } from 'react-router-dom';
 
-import { collection, addDoc, getDocs, getDoc, doc } from 'firebase/firestore';
+import { collection, addDoc, getDocs, getDoc, doc, setDoc } from 'firebase/firestore';
 
 import './payment.css'
 
 const Payment = (props) => {
   const {id} = useParams()
   const UserFlightsRef = doc(db, "AvailableFlights", id)
-  const ticket = collection(db, "ticket")
+  const ticketRef = doc(db, "tickets", id)
   const [paymentDetail, setPaymentDetail] = useState("")
   const [cardNumber, setCardNumber] = useState("")
   const [cvvNumber, setCvvNumber] = useState("")
   const [expiryDate, setExpiryDate] = useState("")
-  const [postalCode, setPostalCode] = useState("")
+  const [authId, setauthId] = useState("")
+
+ 
   const [user, setUser] = useState("")
 
   const navigate = useNavigate()
@@ -30,14 +32,14 @@ const Payment = (props) => {
       if (user) {
         // User is signed in, see docs for a list of available properties
         // https://firebase.google.com/docs/reference/js/firebase.User
-          setPaymentDetail(user)
+          
         // ..
-        console.log(user)
+        setUser(user)
       } else {
         // User is signed out
         // ...
 
-        navigate("/login")
+        
       }
     });
   },[])
@@ -45,17 +47,24 @@ const Payment = (props) => {
   const submit =  async() => {
     if (cardNumber.length === 12, cvvNumber.length === 3||4, expiryDate.length === 4 ) {
       alert("proceed")
+      console.log(paymentDetail)
 
       try {
-        await addDoc(ticket, {
-          
-        
-        
-      })
+        setDoc(ticketRef, {
+          arrivalCity: paymentDetail.ArrivalCity,
+          departureCity: paymentDetail.departureCity,
+          departureDate: paymentDetail.departureDate,
+          departureTime: paymentDetail.departureTime,
+          displayName: user.email,
+          flightNumber: Math.floor(Math.random()  * (10 - 1 + 1) +1),
+          flightSeat: Math.floor(Math.random()  * (20 - 1 + 1) +1)
+
+        }).then(navigate(`/tickets/${id}`))
+       
       } catch(e) {
         alert(e.message)
       }
-       navigate("/flights")
+      
 
     }
     else {
@@ -168,7 +177,7 @@ const Payment = (props) => {
                     
                   </div>
                 </div>
-
+           
                 <button onClick={submit} className="payment-sign-up-button">
                   <span className="payment-text22">
                     <span>Pay Now {paymentDetail.price} </span>

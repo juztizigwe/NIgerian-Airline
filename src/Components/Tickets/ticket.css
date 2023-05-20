@@ -73,6 +73,7 @@
   display: flex;
   position: absolute;
   align-items: flex-start;
+ 
 }
 .ticket-frame40252 {
   display: flex;
@@ -209,6 +210,7 @@
   line-height: normal;
   font-stretch: normal;
   text-decoration: none;
+  margin-left: -218px
 }
 .ticket-plane-icon1 {
   width: 13px;
@@ -229,10 +231,11 @@
 .ticket-frame40258 {
   gap: 131px;
   top: 312.9996337890625px;
-  left: 405.4998474121094px;
+  left: 325.4998474121094px;
   display: flex;
   position: absolute;
   align-items: center;
+  
 }
 .ticket-text23 {
   color: var(--dl-color-default-green);

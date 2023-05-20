@@ -15,7 +15,7 @@ function LandingPage() {
         title="Safest Airline in the world"
         button="Book now"
       />
-      <About image={aboutImage2} title="Travel the world" button="Book now" />
+      <About image={aboutImage2} title="Travel the worls" button="Book now" />
     </div>
   )
 }

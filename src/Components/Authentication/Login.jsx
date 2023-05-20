@@ -20,7 +20,7 @@ function Login() {
         signInWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
           // Signed in 
-          navigate("/booking")
+          navigate("/book")
            
           const user = userCredential.user;
           // ...

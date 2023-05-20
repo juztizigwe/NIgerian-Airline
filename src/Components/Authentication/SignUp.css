@@ -1,7 +1,7 @@
 .sign__up {
     width: 505px;
-height: 747px;
-left: 827px;
+height: 600px;
+left: 685px;
 top: 103px;
 
 background: #FFFFFF;
@@ -186,4 +186,8 @@ border: 0.6px solid #282828;
 border-radius: 6px;
 margin-bottom: 40px;
 
+}
+
+.form-box {
+    left: 685px;
 }
