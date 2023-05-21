@@ -30,7 +30,7 @@ function Header() {
        
       }
     });
-  },[])
+  },[user])
 
    const submit = () => {
     if (user) {
