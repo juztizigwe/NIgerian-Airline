@@ -39,16 +39,6 @@ const AdminDashboaed = (props) => {
                     className="admin-dashboaed-rectangle5"
                   />
                 </div>
-                <div className="admin-dashboaed-menu2">
-                  <img
-                    src="/playground_assets/menucari935-sk9r.svg"
-                    alt="MenuCarI935"
-                    className="admin-dashboaed-menu-car"
-                  />
-                  <span className="admin-dashboaed-text02">
-                    <span>Flight Attendants</span>
-                  </span>
-                </div>
                 <div className="admin-dashboaed-menu3">
                   <div className="admin-dashboaed-menu-booking">
                     <div className="admin-dashboaed-group">
@@ -66,16 +56,6 @@ const AdminDashboaed = (props) => {
                   </div>
                   <span className="admin-dashboaed-text04 ParagraphBody">
                     <span>Bookings</span>
-                  </span>
-                </div>
-                <div className="admin-dashboaed-menu4">
-                  <img
-                    src="/playground_assets/menubelli935-j87.svg"
-                    alt="MenuBellI935"
-                    className="admin-dashboaed-menu-bell"
-                  />
-                  <span className="admin-dashboaed-text06 ParagraphBody">
-                    <span>Notifications</span>
                   </span>
                 </div>
                 <div className="admin-dashboaed-menu5">
