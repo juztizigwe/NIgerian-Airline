@@ -1,0 +1,1026 @@
+.admin-dashboaed-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+.admin-dashboaed-admin-dashboaed {
+  width: 100%;
+  height: 900px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-color: rgba(255, 255, 255, 1);
+}
+.admin-dashboaed-mainmenu {
+  gap: 114px;
+  top: 0px;
+  left: 0px;
+  width: 240px;
+  height: 900px;
+  display: flex;
+  padding: 0 24px 24px 24px;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+  background-color: black;
+}
+.admin-dashboaed-menu {
+  gap: 20px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.admin-dashboaed-logo {
+  gap: 8px;
+  display: flex;
+  padding: 24px 8px;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.admin-dashboaed-logo1 {
+  gap: 4px;
+  display: flex;
+  align-items: flex-end;
+}
+.admin-dashboaed-frame {
+  width: 40px;
+  height: 30px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.admin-dashboaed-menuitem {
+  gap: 16px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.admin-dashboaed-menutop {
+  gap: 8px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.admin-dashboaed-menu1 {
+  gap: 12px;
+  display: flex;
+  padding: 12px 16px;
+  position: relative;
+  align-items: center;
+  border-radius: 4px;
+  background-color: var(--dl-color-default-green);
+}
+.admin-dashboaed-menu-dashboard {
+  width: 24px;
+  height: 24px;
+}
+.admin-dashboaed-text {
+  color: rgba(255, 255, 255, 1);
+  width: 124px;
+  height: auto;
+  z-index: 1;
+  text-align: left;
+  line-height: 24px;
+}
+.admin-dashboaed-rectangle5 {
+  top: 6px;
+  left: 0px;
+  width: 6px;
+  height: 36px;
+  z-index: 2;
+  position: absolute;
+  border-radius: 4px;
+}
+.admin-dashboaed-menu2 {
+  gap: 12px;
+  display: flex;
+  opacity: 0.75;
+  padding: 12px 16px;
+  align-items: center;
+  border-radius: 4px;
+}
+.admin-dashboaed-menu-car {
+  width: 24px;
+  height: 24px;
+}
+.admin-dashboaed-text02 {
+  color: rgba(255, 255, 255, 1);
+  width: 124px;
+  height: auto;
+  font-size: 15px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 24px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.admin-dashboaed-menu3 {
+  gap: 12px;
+  display: flex;
+  opacity: 0.75;
+  padding: 12px 16px;
+  align-items: center;
+  border-radius: 4px;
+}
+.admin-dashboaed-menu-booking {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.admin-dashboaed-group {
+  top: 3.000009536743164px;
+  left: 3.000040292739868px;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.admin-dashboaed-vector {
+  top: 0px;
+  left: 0px;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+}
+.admin-dashboaed-vector1 {
+  top: 4.24078369140625px;
+  left: 4.98486328125px;
+  width: 9px;
+  height: 9px;
+  position: absolute;
+}
+.admin-dashboaed-text04 {
+  color: rgba(255, 255, 255, 1);
+  width: 124px;
+  height: auto;
+  text-align: left;
+  line-height: 24px;
+}
+.admin-dashboaed-menu4 {
+  gap: 12px;
+  display: flex;
+  opacity: 0.75;
+  padding: 12px 16px;
+  align-items: center;
+  border-radius: 4px;
+}
+.admin-dashboaed-menu-bell {
+  width: 24px;
+  height: 24px;
+}
+.admin-dashboaed-text06 {
+  color: rgba(255, 255, 255, 1);
+  width: 124px;
+  height: auto;
+  text-align: left;
+  line-height: 24px;
+}
+.admin-dashboaed-menu5 {
+  gap: 12px;
+  display: flex;
+  opacity: 0.75;
+  padding: 12px 16px;
+  align-items: center;
+  border-radius: 4px;
+}
+.admin-dashboaed-menu-settings {
+  width: 24px;
+  height: 24px;
+}
+.admin-dashboaed-text08 {
+  color: rgba(255, 255, 255, 1);
+  width: 124px;
+  height: auto;
+  text-align: left;
+  line-height: 24px;
+}
+.admin-dashboaed-splitline {
+  gap: 8px;
+  display: flex;
+  padding: 8px 0 8px 16px;
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: center;
+}
+.admin-dashboaed-line2 {
+  width: 176px;
+  height: 1px;
+}
+.admin-dashboaed-logout {
+  gap: 8px;
+  display: flex;
+  padding: 32px 0;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.admin-dashboaed-logout1 {
+  gap: 12px;
+  display: flex;
+  padding: 12px 46px;
+  align-items: center;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.20000000298023224);
+}
+.admin-dashboaed-frame39997 {
+  gap: 12px;
+  display: flex;
+  align-items: center;
+}
+.admin-dashboaed-logout2 {
+  width: 20px;
+  height: 20px;
+}
+.admin-dashboaed-text10 {
+  color: rgba(255, 255, 255, 1);
+  width: 68px;
+  height: auto;
+  text-align: left;
+  line-height: 24px;
+}
+.admin-dashboaed-car-availablity {
+  gap: 16px;
+  top: 22px;
+  left: 316px;
+  width: 942px;
+  display: flex;
+  padding: 32px 28px 40px 28px;
+  position: absolute;
+  box-shadow: 0px 8px 24px 0px rgba(69, 69, 79, 0.10000000149011612) ;
+  align-items: flex-start;
+  border-radius: 8px;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 1);
+}
+.admin-dashboaed-header {
+  gap: 120px;
+  display: flex;
+  align-items: center;
+}
+.admin-dashboaed-text12 {
+  color: var(--dl-color-default-black);
+  height: auto;
+  text-align: left;
+  line-height: 24px;
+}
+.admin-dashboaed-input {
+  gap: 32px;
+  display: flex;
+  align-items: center;
+}
+.admin-dashboaed-frame40166 {
+  gap: 24px;
+  display: flex;
+  align-items: flex-start;
+}
+.admin-dashboaed-input1 {
+  gap: 12px;
+  display: flex;
+  padding: 12px 16px;
+  align-items: flex-start;
+  border-color: rgba(222, 222, 222, 1);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 8px;
+  padding-right: 12px 16px;
+  width: 188px;
+}
+.admin-dashboaed-frame2 {
+  gap: 8px;
+  display: flex;
+  padding: 0 16px 0 0;
+  align-items: flex-start;
+}
+.admin-dashboaed-text14 {
+  color: var(--dl-color-default-gray02);
+  width: 93px;
+  height: auto;
+  text-align: left;
+  line-height: 24px;
+}
+.admin-dashboaed-chevrondown {
+  width: 24px;
+  height: 24px;
+}
+.admin-dashboaed-input2 {
+  gap: 12px;
+  display: flex;
+  padding: 12px 16px;
+  align-items: flex-start;
+  border-color: rgba(222, 222, 222, 1);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 8px;
+}
+.admin-dashboaed-frame21 {
+  gap: 8px;
+  display: flex;
+  padding: 0 16px 0 0;
+  align-items: flex-start;
+}
+.admin-dashboaed-text16 {
+  color: var(--dl-color-default-gray02);
+  width: 93px;
+  height: auto;
+  text-align: left;
+  line-height: 24px;
+}
+.admin-dashboaed-chevrondown1 {
+  width: 24px;
+  height: 24px;
+}
+.admin-dashboaed-datetime {
+  gap: 12px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.admin-dashboaed-frame21 {
+  gap: -1px;
+  display: flex;
+  align-items: flex-start;
+}
+.admin-dashboaed-input3 {
+  gap: 12px;
+  display: flex;
+  padding: 12px 16px;
+  align-items: flex-start;
+  border-color: rgba(222, 222, 222, 1);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 8px 0 0 8px;
+}
+.admin-dashboaed-calendarcheck {
+  width: 24px;
+  height: 24px;
+}
+.admin-dashboaed-frame22 {
+  gap: 8px;
+  display: flex;
+  padding: 0 16px 0 0;
+  align-items: flex-start;
+}
+.admin-dashboaed-text18 {
+  color: var(--dl-color-default-gray02);
+  width: 104px;
+  height: auto;
+  text-align: left;
+  line-height: 24px;
+}
+.admin-dashboaed-input4 {
+  gap: 12px;
+  display: flex;
+  padding: 12px 16px;
+  align-items: flex-start;
+  border-color: rgba(222, 222, 222, 1);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0 8px 8px 0;
+}
+.admin-dashboaed-clock2 {
+  width: 24px;
+  height: 24px;
+}
+.admin-dashboaed-frame23 {
+  gap: 8px;
+  display: flex;
+  padding: 0 16px 0 0;
+  align-items: flex-start;
+}
+.admin-dashboaed-text20 {
+  color: var(--dl-color-default-gray02);
+  width: 47px;
+  height: auto;
+  text-align: left;
+  line-height: 24px;
+}
+.admin-dashboaed-chevrondown2 {
+  width: 24px;
+  height: 24px;
+}
+.admin-dashboaed-frame40123 {
+  gap: 64px;
+  display: flex;
+  padding: 12px 36px;
+  align-items: center;
+  border-radius: 4px;
+  background-color: green;
+  cursor: pointer;
+}
+.admin-dashboaed-text22 {
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  font-size: 16px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 24px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.admin-dashboaed-live-flight-status {
+  top: 238px;
+  left: 316px;
+  width: 800px;
+  display: flex;
+  position: absolute;
+  box-shadow: 0px 8px 24px 0px rgba(69, 69, 79, 0.10000000149011612) ;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 1);
+}
+.admin-dashboaed-live-car-status {
+  display: flex;
+  padding: 32px 28px 24px 28px;
+  box-shadow: 0px 8px 24px 0px rgba(100, 100, 116, 0.05000000074505806) ;
+  align-items: flex-start;
+  border-radius: 8px;
+  flex-direction: column;
+}
+.admin-dashboaed-header1 {
+  gap: 12px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.admin-dashboaed-frame40248 {
+  width: 744px;
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+  justify-content: space-between;
+}
+.admin-dashboaed-text24 {
+  color: var(--dl-color-default-black);
+  height: auto;
+  text-align: left;
+  line-height: 24px;
+}
+.admin-dashboaed-filter {
+  gap: 8px;
+  display: flex;
+  padding: 0 16px;
+  align-items: center;
+  border-radius: 4px;
+}
+.admin-dashboaed-filter1 {
+  width: 16px;
+  height: 16px;
+}
+.admin-dashboaed-frame40058 {
+  gap: 8px;
+  display: flex;
+  align-items: center;
+}
+.admin-dashboaed-text26 {
+  color: var(--dl-color-default-gray02);
+  height: auto;
+  text-align: left;
+  line-height: 24px;
+}
+.admin-dashboaed-frame40191 {
+  gap: 56px;
+  width: 744px;
+  display: flex;
+  padding: 0 0 12px 0;
+  align-items: center;
+  flex-shrink: 0;
+  border-color: rgba(162, 162, 162, 0.25);
+  border-style: solid;
+  border-width: Symbol(figma.mixed)px;
+}
+.admin-dashboaed-frame40190 {
+  gap: 64px;
+  display: flex;
+  align-items: center;
+}
+.admin-dashboaed-frame40189 {
+  gap: 32px;
+  display: flex;
+  align-items: center;
+}
+.admin-dashboaed-frame40188 {
+  gap: 36px;
+  display: flex;
+  align-items: center;
+}
+.admin-dashboaed-text28 {
+  color: var(--dl-color-default-gray02);
+  width: 24px;
+  height: auto;
+  font-size: 14px;
+  font-style: Light;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 300;
+  line-height: 16px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.admin-dashboaed-text30 {
+  color: var(--dl-color-default-gray02);
+  width: 66px;
+  height: auto;
+  text-align: left;
+  line-height: 18px;
+}
+.admin-dashboaed-text32 {
+  color: var(--dl-color-default-gray02);
+  width: 144px;
+  height: auto;
+  text-align: left;
+  line-height: 18px;
+}
+.admin-dashboaed-text34 {
+  color: var(--dl-color-default-gray02);
+  width: 118px;
+  height: auto;
+  text-align: left;
+  line-height: 18px;
+}
+.admin-dashboaed-text36 {
+  color: var(--dl-color-default-gray02);
+  width: 72px;
+  height: auto;
+  text-align: left;
+  line-height: 18px;
+}
+.admin-dashboaed-carlist {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.admin-dashboaed-item {
+  gap: 48px;
+  display: flex;
+  padding: 12px 0;
+  align-items: center;
+  border-color: rgba(162, 162, 162, 0.25);
+  border-style: solid;
+  border-width: Symbol(figma.mixed)px;
+}
+.admin-dashboaed-frame40181 {
+  gap: 56px;
+  display: flex;
+  align-items: center;
+}
+.admin-dashboaed-frame40178 {
+  gap: 64px;
+  display: flex;
+  align-items: center;
+}
+.admin-dashboaed-frame40177 {
+  gap: 32px;
+  display: flex;
+  align-items: center;
+}
+.admin-dashboaed-frame40172 {
+  gap: 36px;
+  display: flex;
+  align-items: center;
+}
+.admin-dashboaed-text38 {
+  color: var(--dl-color-default-black);
+  width: 24px;
+  height: auto;
+  text-align: center;
+  line-height: 16px;
+}
+.admin-dashboaed-frame39984 {
+  gap: 24px;
+  display: flex;
+  padding: 4px 12px;
+  align-items: flex-start;
+  border-radius: 4px;
+  background-color: rgba(153, 153, 153, 0.10000000149011612);
+}
+.admin-dashboaed-text40 {
+  color: var(--dl-color-default-black);
+  width: 42px;
+  height: auto;
+  text-align: center;
+  line-height: 16px;
+}
+.admin-dashboaed-frame39982 {
+  gap: 12px;
+  display: flex;
+  align-items: center;
+}
+.admin-dashboaed-ellipse7 {
+  width: 24px;
+  height: 24px;
+  box-sizing: content-box;
+  border-color: rgba(248, 247, 241, 1);
+  border-style: solid;
+  border-width: 1px;
+}
+.admin-dashboaed-text42 {
+  color: var(--dl-color-default-black);
+  width: 108px;
+  height: auto;
+  font-size: 16px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.admin-dashboaed-frame39985 {
+  gap: 16px;
+  display: flex;
+  align-items: center;
+}
+.admin-dashboaed-completed {
+  gap: 12px;
+  display: flex;
+  align-items: center;
+}
+.admin-dashboaed-group1 {
+  width: 16px;
+  height: 16px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.admin-dashboaed-ellipse1 {
+  top: 0px;
+  left: 0px;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  border-color: rgba(82, 200, 63, 1);
+  border-style: solid;
+  border-width: 1px;
+}
+.admin-dashboaed-ellipse2 {
+  top: 2px;
+  left: 2px;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  border-color: rgba(82, 200, 63, 1);
+  border-style: solid;
+  border-width: 1px;
+}
+.admin-dashboaed-text44 {
+  color: var(--dl-color-default-gray02);
+  width: 86px;
+  height: auto;
+  text-align: left;
+  line-height: normal;
+}
+.admin-dashboaed-text46 {
+  color: var(--dl-color-default-gray02);
+  width: 72px;
+  height: auto;
+  text-align: left;
+  line-height: normal;
+}
+.admin-dashboaed-frame39964 {
+  gap: 8px;
+  display: flex;
+  padding: 4px 16px;
+  align-items: flex-start;
+  border-radius: 4px;
+  background-color: var(--dl-color-default-green);
+}
+.admin-dashboaed-text48 {
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  font-size: 16px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 24px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.admin-dashboaed-item1 {
+  gap: 48px;
+  display: flex;
+  padding: 12px 0;
+  align-items: center;
+  border-color: rgba(162, 162, 162, 0.25);
+  border-style: solid;
+  border-width: Symbol(figma.mixed)px;
+}
+.admin-dashboaed-frame40182 {
+  gap: 56px;
+  display: flex;
+  align-items: center;
+}
+.admin-dashboaed-frame40179 {
+  gap: 64px;
+  display: flex;
+  align-items: center;
+}
+.admin-dashboaed-frame40176 {
+  gap: 32px;
+  display: flex;
+  align-items: center;
+}
+.admin-dashboaed-frame40173 {
+  gap: 36px;
+  display: flex;
+  align-items: center;
+}
+.admin-dashboaed-text50 {
+  color: var(--dl-color-default-black);
+  width: 24px;
+  height: auto;
+  text-align: center;
+  line-height: 16px;
+}
+.admin-dashboaed-frame39987 {
+  gap: 24px;
+  display: flex;
+  padding: 4px 12px;
+  align-items: flex-start;
+  border-radius: 4px;
+  background-color: rgba(153, 153, 153, 0.10000000149011612);
+}
+.admin-dashboaed-text52 {
+  color: var(--dl-color-default-black);
+  width: 42px;
+  height: auto;
+  text-align: center;
+  line-height: 16px;
+}
+.admin-dashboaed-frame39989 {
+  gap: 12px;
+  display: flex;
+  align-items: center;
+}
+.admin-dashboaed-ellipse71 {
+  width: 24px;
+  height: 24px;
+  box-sizing: content-box;
+  border-color: rgba(248, 247, 241, 1);
+  border-style: solid;
+  border-width: 1px;
+}
+.admin-dashboaed-text54 {
+  color: var(--dl-color-default-black);
+  width: 108px;
+  height: auto;
+  font-size: 16px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.admin-dashboaed-frame39990 {
+  gap: 16px;
+  display: flex;
+  align-items: center;
+}
+.admin-dashboaed-pending {
+  gap: 12px;
+  display: flex;
+  align-items: center;
+}
+.admin-dashboaed-group11 {
+  width: 16px;
+  height: 16px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.admin-dashboaed-ellipse11 {
+  top: 0px;
+  left: 0px;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  border-color: rgba(0, 106, 255, 1);
+  border-style: solid;
+  border-width: 1px;
+}
+.admin-dashboaed-ellipse21 {
+  top: 2px;
+  left: 2px;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  border-color: rgba(0, 106, 255, 1);
+  border-style: solid;
+  border-width: 1px;
+}
+.admin-dashboaed-text56 {
+  color: var(--dl-color-default-gray02);
+  width: 86px;
+  height: auto;
+  text-align: left;
+  line-height: normal;
+}
+.admin-dashboaed-text58 {
+  color: var(--dl-color-default-gray02);
+  width: 72px;
+  height: auto;
+  text-align: left;
+  line-height: normal;
+}
+.admin-dashboaed-frame39988 {
+  gap: 8px;
+  display: flex;
+  padding: 4px 16px;
+  align-items: flex-start;
+  border-radius: 4px;
+  background-color: var(--dl-color-default-green);
+}
+.admin-dashboaed-text60 {
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  font-size: 16px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 24px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.admin-dashboaed-item2 {
+  gap: 48px;
+  display: flex;
+  padding: 16px 0 4px 0;
+  align-items: center;
+}
+.admin-dashboaed-frame40183 {
+  gap: 56px;
+  display: flex;
+  align-items: center;
+}
+.admin-dashboaed-frame40180 {
+  gap: 64px;
+  display: flex;
+  align-items: center;
+}
+.admin-dashboaed-frame40175 {
+  gap: 32px;
+  display: flex;
+  align-items: center;
+}
+.admin-dashboaed-frame40174 {
+  gap: 36px;
+  display: flex;
+  align-items: center;
+}
+.admin-dashboaed-text62 {
+  color: var(--dl-color-default-black);
+  width: 24px;
+  height: auto;
+  text-align: center;
+  line-height: 16px;
+}
+.admin-dashboaed-frame39992 {
+  gap: 24px;
+  display: flex;
+  padding: 4px 12px;
+  align-items: flex-start;
+  border-radius: 4px;
+  background-color: rgba(153, 153, 153, 0.10000000149011612);
+}
+.admin-dashboaed-text64 {
+  color: var(--dl-color-default-black);
+  width: 42px;
+  height: auto;
+  text-align: center;
+  line-height: 16px;
+}
+.admin-dashboaed-frame39994 {
+  gap: 12px;
+  display: flex;
+  align-items: center;
+}
+.admin-dashboaed-ellipse72 {
+  width: 24px;
+  height: 24px;
+  box-sizing: content-box;
+  border-color: rgba(248, 247, 241, 1);
+  border-style: solid;
+  border-width: 1px;
+}
+.admin-dashboaed-text66 {
+  color: var(--dl-color-default-black);
+  width: 108px;
+  height: auto;
+  font-size: 16px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.admin-dashboaed-frame39995 {
+  gap: 16px;
+  display: flex;
+  align-items: center;
+}
+.admin-dashboaed-radiobutton {
+  gap: 12px;
+  display: flex;
+  align-items: center;
+}
+.admin-dashboaed-inroute {
+  gap: 12px;
+  display: flex;
+  align-items: center;
+}
+.admin-dashboaed-group12 {
+  width: 16px;
+  height: 16px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.admin-dashboaed-ellipse12 {
+  top: 0px;
+  left: 0px;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  border-color: rgba(255, 39, 39, 1);
+  border-style: solid;
+  border-width: 1px;
+}
+.admin-dashboaed-ellipse22 {
+  top: 2px;
+  left: 2px;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  border-color: rgba(255, 39, 39, 1);
+  border-style: solid;
+  border-width: 1px;
+}
+.admin-dashboaed-text68 {
+  color: var(--dl-color-default-gray02);
+  width: 86px;
+  height: auto;
+  text-align: left;
+  line-height: normal;
+}
+.admin-dashboaed-text70 {
+  color: var(--dl-color-default-gray02);
+  width: 72px;
+  height: auto;
+  text-align: left;
+  line-height: normal;
+}
+.admin-dashboaed-frame39993 {
+  gap: 8px;
+  display: flex;
+  padding: 4px 16px;
+  align-items: flex-start;
+  border-radius: 4px;
+  background-color: var(--dl-color-default-green);
+}
+.admin-dashboaed-text72 {
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  font-size: 16px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 24px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.admin-dashboaed-scrollbar {
+  top: 110px;
+  left: 794px;
+  width: 4px;
+  height: 64px;
+  opacity: 0.30;
+  z-index: 1;
+  position: absolute;
+  border-radius: 3px;
+}
