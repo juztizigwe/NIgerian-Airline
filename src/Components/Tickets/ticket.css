@@ -8,7 +8,7 @@
 }
 
 .ticket-con {
-  background-color: #61dafb;
+  background-color: #d3ffcf;
   width: 70%;
   height: 50%;
   margin-top: 12%;
@@ -17,6 +17,7 @@
   position: absolute;
   align-items: flex-start;
   flex-shrink: 1;
+  flex-direction: column;
 }
 
 .ticket-rectangle11 {
@@ -26,18 +27,23 @@
   border-radius: 10px 10px 0 0;
 }
 
+.top {
+  display: flex;
+  gap: 120%;
+  position: absolute;
+}
 
 .logo {
-  position: absolute;
+  /*position: absolute;*/
+  display: flex;
 }
 
 .fts {
   gap: 5px;
-  top: 196px;
-  left: 950px;
   display: flex;
-  position: absolute;
+  /*position: absolute;*/
   align-items: center;
+  float: right;
 }
 .planeiconw {
   width: 13px;
@@ -58,22 +64,44 @@
 .ticket-plane16 {
   width: 1072px;
   height: 567px;
-  position: absolute;
 }
+
+.lower{
+  padding-top: 9%;
+  display: flex;
+  gap: 20%;
+}
+
+.ftb {
+  margin-top: 12%;
+  margin-left: 3%;
+  gap: 20px;
+  display: flex;
+  align-items: center;
+}
+.ftb-text {
+  color: Black;
+  height: auto;
+  font-size: 80px;
+  text-align: left;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+
 .planeiconb {
-  top: 382px;
-  left: 616px;
   width: 20px;
   height: 20px;
   position: absolute;
 }
 
-.customer-details {
+
+.cd {
   gap: 90px;
-  top: 496px;
-  left: 366px;
+  padding-top: 7%;
+  padding-left: 3%;
   display: flex;
-  position: absolute;
   align-items: flex-start;
 
 }
@@ -104,33 +132,10 @@
 }
 
 
-.ftb {
-  gap: 20px;
-  top: 312px;
-  left: 325px;
-  display: flex;
-  position: absolute;
-  align-items: center;
-
-}
-.ftb-text {
-  color: Black;
-  height: auto;
-  font-size: 80px;
-  text-align: left;
-  font-weight: 500;
-  line-height: normal;
-  font-stretch: normal;
-  text-decoration: none;
-}
-
-.customer-details1 {
+.cd1 {
   gap: 12px;
-  top: 296px;
-  left: 963px;
   display: flex;
   padding: 10px 27px;
-  position: absolute;
   align-items: flex-start;
   flex-direction: column;
 }

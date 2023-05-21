@@ -59,6 +59,13 @@ const Ticket = (props) => {
         <title>Ticket</title>
       </Helmet>
         <div className="ticket-con">
+
+          {/*/!*BG Plane*!/*/}
+          {/*<img*/}
+          {/*    src="/playground_assets/plane168126-q36-1100w.png"*/}
+          {/*    alt="Plane168126"*/}
+          {/*    className="ticket-plane16"*/}
+          {/*/>*/}
           {/*Header*/}
           <img
               src="/playground_assets/rectangle117822-4rii-200h.png"
@@ -66,126 +73,120 @@ const Ticket = (props) => {
               className="ticket-rectangle11"
           />
 
-          <div>
-            {/*Logo*/}
-            <img
-                src="/playground_assets/logo.png"
-                alt="Logo28024"
-                className="logo"
-            />
-
-            {/*From-To Small*/}
-            <div className="fts">
-            <span className="fts-text">
-              <span>{ticketDetail.departureCity}</span>
-            </span>
+          <div className="top">
+              {/*Logo*/}
               <img
-                  src="/playground_assets/planeiconw.png"
-                  alt="Pplaneiconw"
-                  className="planeiconw"
+                  src="/playground_assets/logo.png"
+                  alt="Logo2"
+                  className="logo"
               />
-              <span className="fts-text">
-              <span>{ticketDetail.arrivalCity}</span>
-            </span>
-            </div>
+
+              {/*From-To Small*/}
+                <div className="fts">
+                <span className="fts-text">
+                  <span>{ticketDetail.departureCity}</span>
+                </span>
+                  <img
+                      src="/playground_assets/planeiconw.png"
+                      alt="planeiconw"
+                      className="planeiconw"
+                  />
+                  <span className="fts-text">
+                  <span>{ticketDetail.arrivalCity}</span>
+                </span>
+                </div>
           </div>
 
-          {/*BG Plane*/}
-          <img
-            src="/playground_assets/plane168126-q36-1100w.png"
-            alt="Plane168126"
-            className="ticket-plane16"
-          />
+          <div className="lower">
 
-          {/*Plane Icon Bg*/}
-
-
-
-          {/*From-To Big*/}
-          <div className="ftb">
+            <div className="lower-l">
+              {/*From-To Big*/}
+              <div className="ftb">
             <span className="ftb-text">
               <span>{ticketDetail.departureCity}</span>
             </span>
-            <img
-                src="/playground_assets/planeiconb.png"
-                alt="planeiconb.png"
-                className="ticket-planeiconb"
-            />
-            <span className="ftb-text">
+                <img
+                    src="/playground_assets/planeiconb.png"
+                    alt="planeiconb.png"
+                    className="ticket-planeiconb"
+                />
+                <span className="ftb-text">
               <span>{ticketDetail.arrivalCity}</span>
             </span>
-          </div>
+              </div>
 
-          {/*Customer Detail*/}
-          <div className="customer-details">
-            {/*Name*/}
-            <div className="c-object">
+              {/*Customer Detail 1*/}
+              <div className="cd">
+                {/*Name*/}
+                <div className="c-object">
               <span className="c-text">
                 <span>Name</span>
               </span>
-              <span className="c-text2">
+                  <span className="c-text2">
                 <span>{ticketDetail.displayName}</span>
               </span>
-            </div>
+                </div>
 
-            {/*Flight*/}
-            <div className="c-object">
+                {/*Flight*/}
+                <div className="c-object">
               <span className="c-text">
                 <span>Flight</span>
               </span>
-              <span className="c-text2">
+                  <span className="c-text2">
                 <span>NA {ticketDetail.flightNumber}</span>
               </span>
-            </div>
+                </div>
 
-            {/*Seat*/}
-            <div className="c-object">
+                {/*Seat*/}
+                <div className="c-object">
               <span className="c-text">
                 <span>Seat</span>
               </span>
-              <span className="c-text2">
+                  <span className="c-text2">
                 <span>{ticketDetail.flightSeat}B</span>
               </span>
+                </div>
+              </div>
             </div>
-          </div>
 
-          {/*CName*/}
-          <div className="customer-details1">
-            <div className="c-object">
+            {/*Customer Detail 1*/}
+            {/*CName*/}
+            <div className="cd1">
+              <div className="c-object">
               <span className="c-text">
                 <span>Name</span>
               </span>
-              <span className="c-text2">
+                <span className="c-text2">
                 <span>{ticketDetail.displayName}</span>
               </span>
-            </div>
+              </div>
 
-            {/*Flight*/}
-            <div className="c-object">
+              {/*Flight*/}
+              <div className="c-object">
               <span className="c-text">
                 <span>Flight</span>
               </span>
-              <span className="c-text2">
+                <span className="c-text2">
                 <span>NA {ticketDetail.flightNumber}</span>
               </span>
-            </div>
+              </div>
 
-            {/*Seat*/}
-            <div className="c-object">
+              {/*Seat*/}
+              <div className="c-object">
               <span className="c-text">
                 <span>Seat</span>
               </span>
-              <span className="c-text2">
+                <span className="c-text2">
                 <span>{ticketDetail.flightSeat}B</span>
               </span>
-            </div>
+              </div>
 
-            {/*Departure*/}
-            <div className="c-object">
+              {/*Departure*/}
+              <div className="c-object">
               <span className="c-text">
                 <span>Departure</span>
               </span>
-              <span className="c-text2">
+                <span className="c-text2">
                   <span>
                     {ticketDetail.departureTime}
                     <span
@@ -195,9 +196,12 @@ const Ticket = (props) => {
                     />
                   </span>
               </span>
+              </div>
             </div>
+            {/*Customer Detail End*/}
           </div>
-          {/*Customer Detail End*/}
+
+
 
 
 
