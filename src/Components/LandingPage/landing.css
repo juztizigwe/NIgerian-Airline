@@ -509,17 +509,17 @@ border-radius: 20px;
       .header-btns{
           margin: 0;
       }
-      .menu{
-          display:none;
-          position:absolute;
-          top:65px;
-          left:0px;
-          background-color:#FFFFFF;
-          border-bottom:4px solid #267a05;
-          width:100%;
-          padding:0px;
-          margin:0px;
-      }
+        .menu{
+            display:none;
+            position:absolute;
+            top:65px;
+            left:0px;
+            background-color:#FFFFFF;
+            border-bottom:4px solid #267a05;
+            width:100%;
+            padding:0px;
+            margin:0px;
+        }
       .menu li{
           width:100%;
       }

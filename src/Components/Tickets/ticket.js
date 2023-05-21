@@ -6,6 +6,8 @@ import {  onAuthStateChanged } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 import { db } from '../../firebase';
 import { useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom'
+
 
 import { collection, addDoc, getDocs, getDoc, doc, setDoc } from 'firebase/firestore';
 
@@ -211,7 +213,11 @@ const Ticket = (props) => {
             className="ticket-line3"
           />
         </div>
+      <div className="btn">
+        <Link to="/home">Exit</Link>
+      </div>
     </div>
+
   )
 }
 

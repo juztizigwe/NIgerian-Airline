@@ -1,7 +1,7 @@
 .ticket-container {
   width: 80%;
   display: flex;
-  overflow: auto;
+  /*overflow: auto;*/
   min-height: 100vh;
   align-items: center;
   flex-direction: column;
@@ -9,21 +9,21 @@
 
 .ticket-con {
   background-color: #d3ffcf;
-  width: 70%;
-  height: 50%;
+  width: 900px;
+  height: 300px;
   margin-top: 12%;
   margin-left: 25%;
   display: flex;
-  position: absolute;
   align-items: flex-start;
   flex-shrink: 1;
   flex-direction: column;
+  border-radius: 20px;
 }
 
 .ticket-rectangle11 {
   width: 100%;
   height: 22%;
-  position: absolute;
+  /*position: absolute;*/
   border-radius: 10px 10px 0 0;
 }
 
@@ -67,7 +67,7 @@
 }
 
 .lower{
-  padding-top: 9%;
+  padding-top: 2px;
   display: flex;
   gap: 20%;
 }
@@ -153,5 +153,14 @@
   height: 1px;
   position: absolute;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) ;
+}
+
+.btn{
+  margin: 20px;
+  color: white;
+  border-radius: 5px;
+  padding: 5px 20px;
+  background-color:#1D6411;
+  border-bottom:4px solid #267a05;
 }
 
