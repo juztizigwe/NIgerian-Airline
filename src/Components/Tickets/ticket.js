@@ -85,7 +85,7 @@ const Ticket = (props) => {
 
           {/*From-To Small*/}
           <div className="fts">
-            <span className="ticket-text19">
+            <span className="fts-text">
               <span>{ticketDetail.departureCity}</span>
             </span>
             <img
@@ -93,7 +93,7 @@ const Ticket = (props) => {
                 alt="Pplaneiconw"
                 className="planeiconw"
             />
-            <span className="ticket-text21">
+            <span className="fts-text">
               <span>{ticketDetail.arrivalCity}</span>
             </span>
           </div>
@@ -147,32 +147,32 @@ const Ticket = (props) => {
           </div>
 
           {/*CName*/}
-          <div className="ticket-frame40259">
-            <div className="ticket-frame402521">
-              <span className="ticket-text27">
+          <div className="customer-details1">
+            <div className="c-object">
+              <span className="c-text">
                 <span>Name</span>
               </span>
-              <span className="ticket-text29">
+              <span className="c-text2">
                 <span>{ticketDetail.displayName}</span>
               </span>
             </div>
 
             {/*Flight*/}
-            <div className="ticket-frame402531">
-              <span className="ticket-text31">
+            <div className="c-object">
+              <span className="c-text">
                 <span>Flight</span>
               </span>
-              <span className="ticket-text33">
+              <span className="c-text2">
                 <span>NA {ticketDetail.flightNumber}</span>
               </span>
             </div>
 
             {/*Seat*/}
-            <div className="ticket-frame402541">
-              <span className="ticket-text35">
+            <div className="c-object">
+              <span className="c-text">
                 <span>Seat</span>
               </span>
-              <span className="ticket-text37">
+              <span className="c-text2">
                 <span>{ticketDetail.flightSeat}B</span>
               </span>
             </div>
