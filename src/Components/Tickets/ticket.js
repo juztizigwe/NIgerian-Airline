@@ -59,33 +59,40 @@ const Ticket = (props) => {
         <title>Ticket</title>
       </Helmet>
       <div className="ticket-ticket">
-        <img
-          src="/playground_assets/plane124499-ecii-1000w.png"
-          alt="Plane124499"
-          className="ticket-plane12"
-        />
-        <div className="ticket-cont">
+        <div className="ticket-con">
+          {/*Header*/}
           <img
-            src="/playground_assets/rectangle34410-0oos-1000w.png"
-            alt="Rectangle34410"
-            className="ticket-rectangle3"
+              src="/playground_assets/rectangle117822-4rii-200h.png"
+              alt="Rectangle117822"
+              className="ticket-rectangle11"
           />
+
+          {/*Logo*/}
+          <img
+              src="/playground_assets/logo28024-h64-200h.png"
+              alt="Logo28024"
+              className="ticket-logo2"
+          />
+
+          {/*BG Plane*/}
           <img
             src="/playground_assets/plane168126-q36-1100w.png"
             alt="Plane168126"
             className="ticket-plane16"
           />
+
+          {/*Plane Icon Bg*/}
           <img
             src="/playground_assets/pngtransparentairplanecomputericonsaircrafticona5f8023-8o79-200h.png"
             alt="pngtransparentairplanecomputericonsaircrafticona5f8023"
             className="ticket-pngtransparentairplanecomputericonsaircrafticona5f"
           />
-          <img
-            src="/playground_assets/rectangle117822-4rii-200h.png"
-            alt="Rectangle117822"
-            className="ticket-rectangle11"
-          />
+
+
+
+          {/*Customer Detail*/}
           <div className="ticket-frame40256">
+            {/*Name*/}
             <div className="ticket-frame40252">
               <span className="ticket-text">
                 <span>Name</span>
@@ -94,6 +101,8 @@ const Ticket = (props) => {
                 <span>{ticketDetail.displayName}</span>
               </span>
             </div>
+
+            {/*Flight*/}
             <div className="ticket-frame40253">
               <span className="ticket-text04">
                 <span>Flight</span>
@@ -110,16 +119,16 @@ const Ticket = (props) => {
                 <span>{ticketDetail.flightSeat}B</span>
               </span>
             </div>
-         
+
           </div>
           <div className="ticket-frame40257">
             <span className="ticket-text19">
               <span>{ticketDetail.departureCity}</span>
             </span>
             <img
-              src="/playground_assets/planeicon18022-38oq-200h.png"
-              alt="PlaneIcon18022"
-              className="ticket-plane-icon1"
+                src="/playground_assets/planeicon18022-38oq-200h.png"
+                alt="PlaneIcon18022"
+                className="ticket-plane-icon1"
             />
             <span className="ticket-text21">
               <span>{ticketDetail.arrivalCity}</span>
@@ -167,40 +176,34 @@ const Ticket = (props) => {
                   <span>
                    {/* {ticketDetail.departureDate} */}
                     <span
-                      dangerouslySetInnerHTML={{
-                        __html: ' ',
-                      }}
+                        dangerouslySetInnerHTML={{
+                          __html: ' ',
+                        }}
                     />
                   </span>
                   <br></br>
                   <span>
                     {ticketDetail.departureTime}
                     <span
-                      dangerouslySetInnerHTML={{
-                        __html: ' ',
-                      }}
+                        dangerouslySetInnerHTML={{
+                          __html: ' ',
+                        }}
                     />
                   </span>
                 </span>
               </span>
             </div>
           </div>
-          <img
-            src="/playground_assets/logo28024-h64-200h.png"
-            alt="Logo28024"
-            className="ticket-logo2"
-          />
+          {/*Customer Detail End*/}
+
+
+
           <img
             src="/playground_assets/line37822-hbubg.svg"
             alt="Line37822"
             className="ticket-line3"
           />
         </div>
-        <img
-          src="/playground_assets/plane24416-ytlc-300h.png"
-          alt="Plane24416"
-          className="ticket-plane2"
-        />
       </div>
     </div>
   )
