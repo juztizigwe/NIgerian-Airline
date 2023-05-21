@@ -76,7 +76,7 @@ const Booking = (props) => {
           
           setStartPoint(filteredData[0].from)
           setFinishPoint(filteredData[0].to)
-          console.log(filteredData)
+          console.log(filteredData[0].from)
         } catch(error) {
           console.log(error)
         }
