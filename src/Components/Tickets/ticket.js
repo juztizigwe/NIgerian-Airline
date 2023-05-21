@@ -18,7 +18,7 @@ const Ticket = (props) => {
   const [ticketDetail, setTicketDetail] = useState("")
   const {id} = useParams()
   const UserTicketsRef = doc(db, "tickets", id)
-  const [departureCity, setDepatureCity] = useState("")
+  const [dcityid, setdcityid] = useState("")
 
   useEffect(() => {
     onAuthStateChanged(auth, (user) => {
@@ -44,7 +44,7 @@ const Ticket = (props) => {
         setTicketDetail(doc.data(), doc.id)
        })
      console.log(ticketDetail)
-       setDepatureCity(ticketDetail.departureCity)
+       setdcityid(ticketDetail.dcityid)
       
       
      } catch(error) {
@@ -86,7 +86,7 @@ const Ticket = (props) => {
               {/*From-To Small*/}
                 <div className="fts">
                 <span className="fts-text">
-                  <span>{ticketDetail.departureCity}</span>
+                  <span>{ticketDetail.dcityid}</span>
                 </span>
                   <img
                       src="/playground_assets/planeiconw.png"
@@ -94,7 +94,7 @@ const Ticket = (props) => {
                       className="planeiconw"
                   />
                   <span className="fts-text">
-                  <span>{ticketDetail.arrivalCity}</span>
+                  <span>{ticketDetail.dcityid}</span>
                 </span>
                 </div>
           </div>
@@ -105,7 +105,7 @@ const Ticket = (props) => {
               {/*From-To Big*/}
               <div className="ftb">
             <span className="ftb-text">
-              <span>{ticketDetail.departureCity}</span>
+              <span>{ticketDetail.dcityid}</span>
             </span>
                 <img
                     src="/playground_assets/planeiconb.png"
@@ -113,7 +113,7 @@ const Ticket = (props) => {
                     className="ticket-planeiconb"
                 />
                 <span className="ftb-text">
-              <span>{ticketDetail.arrivalCity}</span>
+              <span>{ticketDetail.acityid}</span>
             </span>
               </div>
 
