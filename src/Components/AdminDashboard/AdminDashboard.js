@@ -4,15 +4,15 @@ import { Helmet } from 'react-helmet'
 import {  onAuthStateChanged } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 import { auth, db } from '../../firebase';
-import { collection, addDoc, getDocs } from 'firebase/firestore';
+import { collection, addDoc, getDocs, getDoc, doc } from 'firebase/firestore';
 
 import './admin-dashboaed.css'
 
 const AdminDashboaed = (props) => {
   const navigate = useNavigate()
   const [user, setUser] = useState();
-  const [admin, setAdmin] = useState([])
-  const AdminRef = collection(db, "admin");
+  const [admin, setAdmin] = useState()
+  const AdminRef = doc(db, "admin", "gXODX6p9aQ3cIQ8gxDzp" );
   const [email, setEmail] = useState([])
 
 
@@ -23,7 +23,8 @@ const AdminDashboaed = (props) => {
         // https://firebase.google.com/docs/reference/js/firebase.User
       setUser(user)
         // ...
-        
+        console.log(user)
+
       } else {
         // User is signed out
         // ...
@@ -35,16 +36,16 @@ const AdminDashboaed = (props) => {
 
   useEffect(() => {
     const getAdmin = async () => {
-     try {
-       const data = await getDocs(AdminRef)
-       const filteredData =data.docs.map((doc) => ({
-         ...doc.data(),
-        
-       }));
+      try {
+        const data = await getDoc(AdminRef)
+        .then((doc) =>{
+         setAdmin(doc.data(), doc.id)
+        })
        
          
     
-      console.log(filteredData)
+  
+     console.log(admin.email)
       
       
      } catch(error) {
@@ -54,6 +55,23 @@ const AdminDashboaed = (props) => {
    }
    getAdmin()
  },[])
+
+   useEffect(() => {
+     const verifyAdmin = async () => {
+      try {
+      if (admin.email[0]  || admin.email[1] || admin.email[2] === user.email) {
+        return
+      } else {
+        alert("dont come here again")
+       navigate("/book")
+      }
+
+      } catch(e) {
+        console.log(e)
+      }
+     }
+     verifyAdmin()
+   },[])
  
   return (
     <div className="admin-dashboaed-container">
@@ -85,6 +103,16 @@ const AdminDashboaed = (props) => {
                     className="admin-dashboaed-rectangle5"
                   />
                 </div>
+                <div className="admin-dashboaed-menu2">
+                  <img
+                    src="/playground_assets/menucari935-sk9r.svg"
+                    alt="MenuCarI935"
+                    className="admin-dashboaed-menu-car"
+                  />
+                  <span className="admin-dashboaed-text02">
+                    <span>Flight Attendants</span>
+                  </span>
+                </div>
                 <div className="admin-dashboaed-menu3">
                   <div className="admin-dashboaed-menu-booking">
                     <div className="admin-dashboaed-group">
@@ -102,6 +130,16 @@ const AdminDashboaed = (props) => {
                   </div>
                   <span className="admin-dashboaed-text04 ParagraphBody">
                     <span>Bookings</span>
+                  </span>
+                </div>
+                <div className="admin-dashboaed-menu4">
+                  <img
+                    src="/playground_assets/menubelli935-j87.svg"
+                    alt="MenuBellI935"
+                    className="admin-dashboaed-menu-bell"
+                  />
+                  <span className="admin-dashboaed-text06 ParagraphBody">
+                    <span>Notifications</span>
                   </span>
                 </div>
                 <div className="admin-dashboaed-menu5">
