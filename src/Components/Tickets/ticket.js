@@ -69,9 +69,9 @@ const Ticket = (props) => {
 
           {/*Logo*/}
           <img
-              src="/playground_assets/logo28024-h64-200h.png"
+              src="/playground_assets/logo.png"
               alt="Logo28024"
-              className="ticket-logo2"
+              className="logo"
           />
 
           {/*BG Plane*/}
@@ -89,9 +89,9 @@ const Ticket = (props) => {
               <span>{ticketDetail.departureCity}</span>
             </span>
             <img
-                src="/playground_assets/planeiconb.png"
-                alt="PlaneIcon18022"
-                className="ticket-plane-icon1"
+                src="/playground_assets/planeiconw.png"
+                alt="Pplaneiconw"
+                className="planeiconw"
             />
             <span className="ticket-text21">
               <span>{ticketDetail.arrivalCity}</span>
@@ -100,7 +100,7 @@ const Ticket = (props) => {
 
           {/*From-To Big*/}
           <div className="ftb">
-            <span className="ticket-text23">
+            <span className="ftb-text">
               <span>{ticketDetail.departureCity}</span>
             </span>
             <img
@@ -108,46 +108,45 @@ const Ticket = (props) => {
                 alt="planeiconb.png"
                 className="ticket-planeiconb"
             />
-            <span className="ticket-text25">
+            <span className="ftb-text">
               <span>{ticketDetail.arrivalCity}</span>
             </span>
           </div>
 
           {/*Customer Detail*/}
-          <div className="ticket-frame40256">
+          <div className="customer-details">
             {/*Name*/}
-            <div className="ticket-frame40252">
-              <span className="ticket-text">
+            <div className="c-object">
+              <span className="c-text">
                 <span>Name</span>
               </span>
-              <span className="ticket-text02">
+              <span className="c-text2">
                 <span>{ticketDetail.displayName}</span>
               </span>
             </div>
 
             {/*Flight*/}
-            <div className="ticket-frame40253">
-              <span className="ticket-text04">
+            <div className="c-object">
+              <span className="c-text">
                 <span>Flight</span>
               </span>
-              <span className="ticket-text06">
+              <span className="c-text2">
                 <span>NA {ticketDetail.flightNumber}</span>
               </span>
             </div>
 
             {/*Seat*/}
-            <div className="ticket-frame40254">
-              <span className="ticket-text08">
+            <div className="c-object">
+              <span className="c-text">
                 <span>Seat</span>
               </span>
-              <span className="ticket-text10">
+              <span className="c-text2">
                 <span>{ticketDetail.flightSeat}B</span>
               </span>
             </div>
-
           </div>
 
-          {/*Name*/}
+          {/*CName*/}
           <div className="ticket-frame40259">
             <div className="ticket-frame402521">
               <span className="ticket-text27">
@@ -179,21 +178,11 @@ const Ticket = (props) => {
             </div>
 
             {/*Departure*/}
-            <div className="ticket-frame402551">
-              <span className="ticket-text39">
+            <div className="c-object">
+              <span className="c-text">
                 <span>Departure</span>
               </span>
-              <span className="ticket-text41">
-                <span>
-                  <span>
-                   {/* {ticketDetail.departureDate} */}
-                    <span
-                        dangerouslySetInnerHTML={{
-                          __html: ' ',
-                        }}
-                    />
-                  </span>
-                  <br></br>
+              <span className="c-text2">
                   <span>
                     {ticketDetail.departureTime}
                     <span
@@ -202,7 +191,6 @@ const Ticket = (props) => {
                         }}
                     />
                   </span>
-                </span>
               </span>
             </div>
           </div>

@@ -45,8 +45,8 @@
   border-radius: 10px;
 }
 .ticket-plane16 {
-  top: 246.1263427734375px;
-  left: 0px;
+  top: 106px;
+  left: 100px;
   width: 1072px;
   height: 567px;
   position: absolute;
@@ -66,7 +66,7 @@
   position: absolute;
   border-radius: 10px 10px 0 0;
 }
-.ticket-frame40256 {
+.customer-details {
   gap: 90px;
   top: 496.9999694824219px;
   left: 366.9998474121094px;
@@ -75,12 +75,12 @@
   align-items: flex-start;
  
 }
-.ticket-frame40252 {
+.c-object{
   display: flex;
   align-items: flex-start;
   flex-direction: column;
 }
-.ticket-text {
+.c-text {
   color: rgba(104, 101, 101, 1);
   height: auto;
   font-size: 15px;
@@ -90,7 +90,7 @@
   font-stretch: normal;
   text-decoration: none;
 }
-.ticket-text02 {
+.c-text2 {
   color: rgba(0, 0, 0, 1);
   height: auto;
   font-size: 18px;
@@ -100,85 +100,11 @@
   font-stretch: normal;
   text-decoration: none;
 }
-.ticket-frame40253 {
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-}
-.ticket-text04 {
-  color: rgba(104, 101, 101, 1);
-  height: auto;
-  font-size: 15px;
-  text-align: left;
-  font-weight: 500;
-  line-height: normal;
-  font-stretch: normal;
-  text-decoration: none;
-}
-.ticket-text06 {
-  color: rgba(0, 0, 0, 1);
-  height: auto;
-  font-size: 18px;
-  text-align: left;
-  font-weight: 500;
-  line-height: normal;
-  font-stretch: normal;
-  text-decoration: none;
-}
-.ticket-frame40254 {
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-}
-.ticket-text08 {
-  color: rgba(104, 101, 101, 1);
-  height: auto;
-  font-size: 15px;
-  text-align: left;
-  font-weight: 500;
-  line-height: normal;
-  font-stretch: normal;
-  text-decoration: none;
-}
-.ticket-text10 {
-  color: rgba(0, 0, 0, 1);
-  height: auto;
-  font-size: 18px;
-  text-align: left;
-  font-weight: 500;
-  line-height: normal;
-  font-stretch: normal;
-  text-decoration: none;
-}
-.ticket-frame40255 {
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-}
-.ticket-text12 {
-  color: rgba(104, 101, 101, 1);
-  height: auto;
-  font-size: 15px;
-  text-align: left;
-  font-weight: 500;
-  line-height: normal;
-  font-stretch: normal;
-  text-decoration: none;
-}
-.ticket-text14 {
-  color: rgba(0, 0, 0, 1);
-  height: auto;
-  font-size: 13px;
-  text-align: left;
-  font-weight: 500;
-  line-height: 123.00000190734863%;
-  font-stretch: normal;
-  text-decoration: none;
-}
+
 .fts {
-  gap: 3px;
+  gap: 5px;
   top: 196.00009155273438px;
-  left: 962.9999389648438px;
+  left: 1150px;
   display: flex;
   position: absolute;
   align-items: center;
@@ -194,7 +120,7 @@
   text-decoration: none;
   margin-left: -218px
 }
-.ticket-plane-icon1 {
+.planeiconw {
   width: 13px;
   height: 13px;
 }
@@ -217,8 +143,8 @@
   align-items: center;
   
 }
-.ticket-text23 {
-  color: var(--dl-color-default-green);
+.ftb-text {
+  color: Black;
   height: auto;
   font-size: 80px;
   text-align: left;
@@ -227,16 +153,7 @@
   font-stretch: normal;
   text-decoration: none;
 }
-.ticket-text25 {
-  color: var(--dl-color-default-green);
-  height: auto;
-  font-size: 80px;
-  text-align: left;
-  font-weight: 500;
-  line-height: normal;
-  font-stretch: normal;
-  text-decoration: none;
-}
+
 .ticket-frame40259 {
   gap: 12px;
   top: 296.9996337890625px;
@@ -323,32 +240,8 @@
   font-stretch: normal;
   text-decoration: none;
 }
-.ticket-frame402551 {
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-}
-.ticket-text39 {
-  color: rgba(104, 101, 101, 1);
-  height: auto;
-  font-size: 15px;
-  text-align: left;
-  font-weight: 500;
-  line-height: normal;
-  font-stretch: normal;
-  text-decoration: none;
-}
-.ticket-text41 {
-  color: rgba(0, 0, 0, 1);
-  height: auto;
-  font-size: 13px;
-  text-align: left;
-  font-weight: 500;
-  line-height: 123.00000190734863%;
-  font-stretch: normal;
-  text-decoration: none;
-}
-.ticket-logo2 {
+
+.logo {
   top: 190px;
   left: 306px;
   width: 190px;
