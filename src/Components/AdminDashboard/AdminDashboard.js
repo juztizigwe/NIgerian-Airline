@@ -133,6 +133,7 @@ const AdminDashboaed = (props) => {
                 type='text'
                 placeholder='To Route'
                 />
+                <br />
                 
               </div>
               <div className="admin-dashboaed-datetime">
@@ -145,9 +146,30 @@ const AdminDashboaed = (props) => {
                   <div className="admin-dashboaed-input4">
                     <input 
                     type='text'
+                    placeholder='Departure Time'
+                    />
+                  </div>
+                </div>
+              </div>
+             < div className="admin-dashboaed-datetime">
+                <div className="admin-dashboaed-frame21 admin-dashboaed-frame21">
+                  <div className="admin-dashboaed-input3">
+                    <input
+                    placeholder='Arrival Time'
+                    />
+                  </div>
+                  <div className="admin-dashboaed-input4">
+                    <input 
+                    type='text'
                     placeholder='Time'
                     />
                   </div>
+                </div>
+                <div>
+                  <input 
+                  className='admin-dashboaed-input3'
+                  placeholder='Price'
+                  />
                 </div>
               </div>
             </div>
