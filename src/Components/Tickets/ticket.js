@@ -82,13 +82,36 @@ const Ticket = (props) => {
           />
 
           {/*Plane Icon Bg*/}
-          <img
-            src="/playground_assets/pngtransparentairplanecomputericonsaircrafticona5f8023-8o79-200h.png"
-            alt="pngtransparentairplanecomputericonsaircrafticona5f8023"
-            className="ticket-pngtransparentairplanecomputericonsaircrafticona5f"
-          />
 
+          {/*From-To Small*/}
+          <div className="fts">
+            <span className="ticket-text19">
+              <span>{ticketDetail.departureCity}</span>
+            </span>
+            <img
+                src="/playground_assets/planeiconb.png"
+                alt="PlaneIcon18022"
+                className="ticket-plane-icon1"
+            />
+            <span className="ticket-text21">
+              <span>{ticketDetail.arrivalCity}</span>
+            </span>
+          </div>
 
+          {/*From-To Big*/}
+          <div className="ftb">
+            <span className="ticket-text23">
+              <span>{ticketDetail.departureCity}</span>
+            </span>
+            <img
+                src="/playground_assets/planeiconb.png"
+                alt="planeiconb.png"
+                className="ticket-planeiconb"
+            />
+            <span className="ticket-text25">
+              <span>{ticketDetail.arrivalCity}</span>
+            </span>
+          </div>
 
           {/*Customer Detail*/}
           <div className="ticket-frame40256">
@@ -111,6 +134,8 @@ const Ticket = (props) => {
                 <span>NA {ticketDetail.flightNumber}</span>
               </span>
             </div>
+
+            {/*Seat*/}
             <div className="ticket-frame40254">
               <span className="ticket-text08">
                 <span>Seat</span>
@@ -121,27 +146,8 @@ const Ticket = (props) => {
             </div>
 
           </div>
-          <div className="ticket-frame40257">
-            <span className="ticket-text19">
-              <span>{ticketDetail.departureCity}</span>
-            </span>
-            <img
-                src="/playground_assets/planeicon18022-38oq-200h.png"
-                alt="PlaneIcon18022"
-                className="ticket-plane-icon1"
-            />
-            <span className="ticket-text21">
-              <span>{ticketDetail.arrivalCity}</span>
-            </span>
-          </div>
-          <div className="ticket-frame40258">
-            <span className="ticket-text23">
-              <span>{ticketDetail.departureCity}</span>
-            </span>
-            <span className="ticket-text25">
-              <span>{ticketDetail.arrivalCity}</span>
-            </span>
-          </div>
+
+          {/*Name*/}
           <div className="ticket-frame40259">
             <div className="ticket-frame402521">
               <span className="ticket-text27">
@@ -151,6 +157,8 @@ const Ticket = (props) => {
                 <span>{ticketDetail.displayName}</span>
               </span>
             </div>
+
+            {/*Flight*/}
             <div className="ticket-frame402531">
               <span className="ticket-text31">
                 <span>Flight</span>
@@ -159,6 +167,8 @@ const Ticket = (props) => {
                 <span>NA {ticketDetail.flightNumber}</span>
               </span>
             </div>
+
+            {/*Seat*/}
             <div className="ticket-frame402541">
               <span className="ticket-text35">
                 <span>Seat</span>
@@ -167,6 +177,8 @@ const Ticket = (props) => {
                 <span>{ticketDetail.flightSeat}B</span>
               </span>
             </div>
+
+            {/*Departure*/}
             <div className="ticket-frame402551">
               <span className="ticket-text39">
                 <span>Departure</span>

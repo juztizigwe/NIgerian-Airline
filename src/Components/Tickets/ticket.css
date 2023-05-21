@@ -51,7 +51,7 @@
   height: 567px;
   position: absolute;
 }
-.ticket-pngtransparentairplanecomputericonsaircrafticona5f {
+.planeiconb {
   top: 382.9996337890625px;
   left: 616.999755859375px;
   width: 20px;
@@ -175,7 +175,7 @@
   font-stretch: normal;
   text-decoration: none;
 }
-.ticket-frame40257 {
+.fts {
   gap: 3px;
   top: 196.00009155273438px;
   left: 962.9999389648438px;
@@ -208,8 +208,8 @@
   font-stretch: normal;
   text-decoration: none;
 }
-.ticket-frame40258 {
-  gap: 131px;
+.ftb {
+  gap: 20px;
   top: 312.9996337890625px;
   left: 325.4998474121094px;
   display: flex;
