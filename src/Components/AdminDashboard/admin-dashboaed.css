@@ -287,6 +287,7 @@
   gap: 24px;
   display: flex;
   align-items: flex-start;
+  flex-direction: column;
 }
 .admin-dashboaed-input1 {
   gap: 12px;
@@ -435,7 +436,7 @@
   text-decoration: none;
 }
 .admin-dashboaed-live-flight-status {
-  top: 238px;
+  top: 395px;
   left: 316px;
   width: 800px;
   display: flex;
