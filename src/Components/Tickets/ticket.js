@@ -58,7 +58,6 @@ const Ticket = (props) => {
       <Helmet>
         <title>Ticket</title>
       </Helmet>
-      <div className="ticket-ticket">
         <div className="ticket-con">
           {/*Header*/}
           <img
@@ -67,12 +66,29 @@ const Ticket = (props) => {
               className="ticket-rectangle11"
           />
 
-          {/*Logo*/}
-          <img
-              src="/playground_assets/logo.png"
-              alt="Logo28024"
-              className="logo"
-          />
+          <div>
+            {/*Logo*/}
+            <img
+                src="/playground_assets/logo.png"
+                alt="Logo28024"
+                className="logo"
+            />
+
+            {/*From-To Small*/}
+            <div className="fts">
+            <span className="fts-text">
+              <span>{ticketDetail.departureCity}</span>
+            </span>
+              <img
+                  src="/playground_assets/planeiconw.png"
+                  alt="Pplaneiconw"
+                  className="planeiconw"
+              />
+              <span className="fts-text">
+              <span>{ticketDetail.arrivalCity}</span>
+            </span>
+            </div>
+          </div>
 
           {/*BG Plane*/}
           <img
@@ -83,20 +99,7 @@ const Ticket = (props) => {
 
           {/*Plane Icon Bg*/}
 
-          {/*From-To Small*/}
-          <div className="fts">
-            <span className="fts-text">
-              <span>{ticketDetail.departureCity}</span>
-            </span>
-            <img
-                src="/playground_assets/planeiconw.png"
-                alt="Pplaneiconw"
-                className="planeiconw"
-            />
-            <span className="fts-text">
-              <span>{ticketDetail.arrivalCity}</span>
-            </span>
-          </div>
+
 
           {/*From-To Big*/}
           <div className="ftb">
@@ -204,7 +207,6 @@ const Ticket = (props) => {
             className="ticket-line3"
           />
         </div>
-      </div>
     </div>
   )
 }
