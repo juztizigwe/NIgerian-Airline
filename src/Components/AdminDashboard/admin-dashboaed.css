@@ -419,7 +419,8 @@
   padding: 12px 36px;
   align-items: center;
   border-radius: 4px;
-  background-color: var(--dl-color-default-green);
+  background-color: green;
+  cursor: pointer;
 }
 .admin-dashboaed-text22 {
   color: rgba(255, 255, 255, 1);

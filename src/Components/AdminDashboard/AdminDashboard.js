@@ -125,61 +125,40 @@ const AdminDashboaed = (props) => {
                 
                 <input
                 className='admin-dashboaed-input1'
+                placeholder='From route'
                 />
               </div>
               <div className="admin-dashboaed-input2">
-                <div>
-                  <span className="admin-dashboaed-text16 ParagraphBody">
-                    <span>To Route</span>
-                  </span>
-                </div>
-                <img
-                  src="/playground_assets/chevrondown1723-qkhj.svg"
-                  alt="chevrondown1723"
-                  className="admin-dashboaed-chevrondown1"
+                <input 
+                type='text'
+                placeholder='To Route'
                 />
+                
               </div>
               <div className="admin-dashboaed-datetime">
                 <div className="admin-dashboaed-frame21 admin-dashboaed-frame21">
                   <div className="admin-dashboaed-input3">
-                    <img
-                      src="/playground_assets/calendarchecki936-a05k.svg"
-                      alt="calendarcheckI936"
-                      className="admin-dashboaed-calendarcheck"
+                    <input
+                    type='date'
                     />
-                    <div className="admin-dashboaed-frame22">
-                      <span className="admin-dashboaed-text18 ParagraphBody">
-                        <span>Nov 20, 2022</span>
-                      </span>
-                    </div>
                   </div>
                   <div className="admin-dashboaed-input4">
-                    <img
-                      src="/playground_assets/clock2i936-odw5g.svg"
-                      alt="Clock2I936"
-                      className="admin-dashboaed-clock2"
-                    />
-                    <div className="admin-dashboaed-frame23">
-                      <span className="admin-dashboaed-text20 ParagraphBody">
-                        <span>10 AM</span>
-                      </span>
-                    </div>
-                    <img
-                      src="/playground_assets/chevrondowni936-0hfi.svg"
-                      alt="chevrondownI936"
-                      className="admin-dashboaed-chevrondown2"
+                    <input 
+                    type='text'
+                    placeholder='Time'
                     />
                   </div>
                 </div>
               </div>
             </div>
-            <div className="admin-dashboaed-frame40123">
+            <button className="admin-dashboaed-frame40123">
               <span className="admin-dashboaed-text22">
                 <span>Set</span>
               </span>
-            </div>
+            </button>
           </div>
         </div>
+        
         <div className="admin-dashboaed-live-flight-status">
           <div className="admin-dashboaed-live-car-status">
             <div className="admin-dashboaed-header1">
