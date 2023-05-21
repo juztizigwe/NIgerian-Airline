@@ -15,7 +15,7 @@ import './payment.css'
 const Payment = (props) => {
   const {id} = useParams()
   const UserFlightsRef = doc(db, "AvailableFlights", id)
-  const ticketRef = doc(db, "tickets", id)
+  const ticketRef = doc(db, "ticket", id)
   const [paymentDetail, setPaymentDetail] = useState("")
   const [cardNumber, setCardNumber] = useState("")
   const [cvvNumber, setCvvNumber] = useState("")
@@ -57,7 +57,9 @@ const Payment = (props) => {
           departureTime: paymentDetail.departureTime,
           displayName: user.email,
           flightNumber: Math.floor(Math.random()  * (10 - 1 + 1) +1),
-          flightSeat: Math.floor(Math.random()  * (20 - 1 + 1) +1)
+          flightSeat: Math.floor(Math.random()  * (20 - 1 + 1) +1),
+          dcityid: paymentDetail.dcityid,
+          acityid: paymentDetail.acityid
 
         }).then(navigate(`/tickets/${id}`))
        
@@ -83,7 +85,7 @@ const Payment = (props) => {
        })
 
        
-      //  console.log(filteredData)
+       console.log(paymentDetail)
       
      } catch(error) {
        console.log(error)
