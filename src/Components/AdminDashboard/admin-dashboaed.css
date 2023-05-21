@@ -28,7 +28,7 @@
   align-items: flex-start;
   flex-shrink: 0;
   flex-direction: column;
-  background-color: black;
+  background-color: #1D6411;
 }
 .admin-dashboaed-menu {
   gap: 20px;

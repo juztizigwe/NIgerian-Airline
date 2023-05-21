@@ -1,43 +1,49 @@
 .ticket-container {
   width: 80%;
   display: flex;
-  overflow: auto;
+  /*overflow: auto;*/
   min-height: 100vh;
   align-items: center;
   flex-direction: column;
 }
 
 .ticket-con {
-  background-color: #61dafb;
-  width: 70%;
-  height: 50%;
+  background-color: #d3ffcf;
+  width: 900px;
+  height: 300px;
   margin-top: 12%;
   margin-left: 25%;
   display: flex;
-  position: absolute;
   align-items: flex-start;
   flex-shrink: 1;
+  flex-direction: column;
+  border-radius: 20px;
 }
 
 .ticket-rectangle11 {
   width: 100%;
   height: 22%;
-  position: absolute;
+  /*position: absolute;*/
   border-radius: 10px 10px 0 0;
 }
 
+.top {
+  display: flex;
+  gap: 120%;
+  position: absolute;
+}
 
 .logo {
-  position: absolute;
+  /*position: absolute;*/
+  display: flex;
 }
 
 .fts {
   gap: 5px;
-  top: 196px;
-  left: 950px;
   display: flex;
-  position: absolute;
+  /*position: absolute;*/
   align-items: center;
+  float: right;
 }
 .planeiconw {
   width: 13px;
@@ -58,22 +64,44 @@
 .ticket-plane16 {
   width: 1072px;
   height: 567px;
-  position: absolute;
 }
+
+.lower{
+  padding-top: 2px;
+  display: flex;
+  gap: 20%;
+}
+
+.ftb {
+  margin-top: 12%;
+  margin-left: 3%;
+  gap: 20px;
+  display: flex;
+  align-items: center;
+}
+.ftb-text {
+  color: Black;
+  height: auto;
+  font-size: 80px;
+  text-align: left;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+
 .planeiconb {
-  top: 382px;
-  left: 616px;
   width: 20px;
   height: 20px;
   position: absolute;
 }
 
-.customer-details {
+
+.cd {
   gap: 90px;
-  top: 496px;
-  left: 366px;
+  padding-top: 7%;
+  padding-left: 3%;
   display: flex;
-  position: absolute;
   align-items: flex-start;
 
 }
@@ -104,33 +132,10 @@
 }
 
 
-.ftb {
-  gap: 20px;
-  top: 312px;
-  left: 325px;
-  display: flex;
-  position: absolute;
-  align-items: center;
-
-}
-.ftb-text {
-  color: Black;
-  height: auto;
-  font-size: 80px;
-  text-align: left;
-  font-weight: 500;
-  line-height: normal;
-  font-stretch: normal;
-  text-decoration: none;
-}
-
-.customer-details1 {
+.cd1 {
   gap: 12px;
-  top: 296px;
-  left: 963px;
   display: flex;
   padding: 10px 27px;
-  position: absolute;
   align-items: flex-start;
   flex-direction: column;
 }
@@ -148,5 +153,14 @@
   height: 1px;
   position: absolute;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) ;
+}
+
+.btn{
+  margin: 20px;
+  color: white;
+  border-radius: 5px;
+  padding: 5px 20px;
+  background-color:#1D6411;
+  border-bottom:4px solid #267a05;
 }
 
