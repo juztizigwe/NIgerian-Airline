@@ -12,230 +12,23 @@
   display: flex;
   overflow: hidden;
   position: relative;
-  align-items: center;
+  align-items: flex-start;
   flex-shrink: 0;
-  justify-content: center;
   background-color: rgba(255, 255, 255, 1);
-}
-.admin-dashboaed-car-availablity {
-  gap: 16px;
-  top: 22px;
-  left: 318px;
-  width: 942px;
-  display: flex;
-  padding: 32px 28px 40px 28px;
-  position: absolute;
-  box-shadow: 0px 8px 24px 0px rgba(69, 69, 79, 0.10000000149011612) ;
-  align-items: flex-start;
-  border-radius: 8px;
-  flex-direction: column;
-  background-color: rgba(255, 255, 255, 1);
-}
-.admin-dashboaed-header {
-  gap: 120px;
-  display: flex;
-  align-items: center;
-}
-.admin-dashboaed-text {
-  color: var(--dl-color-default-black);
-  height: auto;
-  text-align: left;
-  line-height: 24px;
-}
-.admin-dashboaed-input {
-  gap: 32px;
-  display: flex;
-  align-items: center;
-}
-.admin-dashboaed-frame40166 {
-  gap: 24px;
-  display: flex;
-  align-items: flex-start;
-}
-.admin-dashboaed-input1 {
-  gap: 12px;
-  display: flex;
-  padding: 12px 16px;
-  align-items: flex-start;
-  border-color: rgba(222, 222, 222, 1);
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 8px;
-}
-.admin-dashboaed-datetime {
-  gap: 12px;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-}
-.admin-dashboaed-frame21 {
-  gap: -1px;
-  display: flex;
-  align-items: flex-start;
-}
-.admin-dashboaed-input2 {
-  gap: 12px;
-  display: flex;
-  padding: 12px 16px;
-  align-items: flex-start;
-  border-color: rgba(222, 222, 222, 1);
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 8px 0 0 8px;
-}
-.admin-dashboaed-calendarcheck {
-  width: 24px;
-  height: 24px;
-}
-.admin-dashboaed-frame2 {
-  gap: 8px;
-  display: flex;
-  padding: 0 16px 0 0;
-  align-items: flex-start;
-}
-.admin-dashboaed-text02 {
-  color: var(--dl-color-default-gray02);
-  width: 104px;
-  height: auto;
-  text-align: left;
-  line-height: 24px;
-}
-.admin-dashboaed-frame40123 {
-  gap: 64px;
-  display: flex;
-  padding: 12px 36px;
-  align-items: center;
-  border-radius: 4px;
-  background-color: var(--dl-color-default-green);
-}
-.admin-dashboaed-text04 {
-  color: rgba(255, 255, 255, 1);
-  height: auto;
-  font-size: 16px;
-  font-style: Regular;
-  text-align: left;
-  font-family: Inter;
-  font-weight: 400;
-  line-height: 24px;
-  font-stretch: normal;
-  text-decoration: none;
-}
-.admin-dashboaed-car-availablity1 {
-  gap: 16px;
-  top: 171px;
-  right: 186px;
-  width: 942px;
-  display: flex;
-  padding: 32px 28px 40px 28px;
-  position: absolute;
-  box-shadow: 0px 8px 24px 0px rgba(69, 69, 79, 0.10000000149011612) ;
-  align-items: flex-start;
-  border-radius: 8px;
-  flex-direction: column;
-  background-color: rgba(255, 255, 255, 1);
-}
-.admin-dashboaed-header1 {
-  gap: 120px;
-  display: flex;
-  align-items: center;
-}
-.admin-dashboaed-text06 {
-  color: var(--dl-color-default-black);
-  height: auto;
-  text-align: left;
-  line-height: 24px;
-}
-.admin-dashboaed-input3 {
-  gap: 32px;
-  display: flex;
-  align-items: center;
-}
-.admin-dashboaed-frame401661 {
-  gap: 24px;
-  display: flex;
-  align-items: flex-start;
-}
-.admin-dashboaed-input4 {
-  gap: 12px;
-  display: flex;
-  padding: 12px 16px;
-  align-items: flex-start;
-  border-color: rgba(222, 222, 222, 1);
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 8px;
-}
-.admin-dashboaed-datetime1 {
-  gap: 12px;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-}
-.admin-dashboaed-frame211 {
-  gap: -1px;
-  display: flex;
-  align-items: flex-start;
-}
-.admin-dashboaed-input5 {
-  gap: 12px;
-  display: flex;
-  padding: 12px 16px;
-  align-items: flex-start;
-  border-color: rgba(222, 222, 222, 1);
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 8px 0 0 8px;
-}
-.admin-dashboaed-calendarcheck1 {
-  width: 24px;
-  height: 24px;
-}
-.admin-dashboaed-frame21 {
-  gap: 8px;
-  display: flex;
-  padding: 0 16px 0 0;
-  align-items: flex-start;
-}
-.admin-dashboaed-text08 {
-  color: var(--dl-color-default-gray02);
-  width: 104px;
-  height: auto;
-  text-align: left;
-  line-height: 24px;
-}
-.admin-dashboaed-frame401231 {
-  gap: 64px;
-  display: flex;
-  padding: 12px 36px;
-  align-items: center;
-  border-radius: 4px;
-  background-color: var(--dl-color-default-green);
-}
-.admin-dashboaed-text10 {
-  color: rgba(255, 255, 255, 1);
-  height: auto;
-  font-size: 16px;
-  font-style: Regular;
-  text-align: left;
-  font-family: Inter;
-  font-weight: 400;
-  line-height: 24px;
-  font-stretch: normal;
-  text-decoration: none;
 }
 .admin-dashboaed-mainmenu {
   gap: 114px;
   top: 0px;
   left: 0px;
   width: 240px;
-  height: 1003px;
+  height: 900px;
   display: flex;
   padding: 0 24px 24px 24px;
   position: absolute;
   align-items: flex-start;
   flex-shrink: 0;
   flex-direction: column;
-  background-color: var(--dl-color-default-black);
+  background-color: black;
 }
 .admin-dashboaed-menu {
   gap: 20px;
@@ -289,7 +82,7 @@
   width: 24px;
   height: 24px;
 }
-.admin-dashboaed-text12 {
+.admin-dashboaed-text {
   color: rgba(255, 255, 255, 1);
   width: 124px;
   height: auto;
@@ -318,7 +111,7 @@
   width: 24px;
   height: 24px;
 }
-.admin-dashboaed-text14 {
+.admin-dashboaed-text02 {
   color: rgba(255, 255, 255, 1);
   width: 124px;
   height: auto;
@@ -372,7 +165,7 @@
   height: 9px;
   position: absolute;
 }
-.admin-dashboaed-text16 {
+.admin-dashboaed-text04 {
   color: rgba(255, 255, 255, 1);
   width: 124px;
   height: auto;
@@ -391,7 +184,7 @@
   width: 24px;
   height: 24px;
 }
-.admin-dashboaed-text18 {
+.admin-dashboaed-text06 {
   color: rgba(255, 255, 255, 1);
   width: 124px;
   height: auto;
@@ -410,7 +203,7 @@
   width: 24px;
   height: 24px;
 }
-.admin-dashboaed-text20 {
+.admin-dashboaed-text08 {
   color: rgba(255, 255, 255, 1);
   width: 124px;
   height: auto;
@@ -453,12 +246,192 @@
   width: 20px;
   height: 20px;
 }
-.admin-dashboaed-text22 {
+.admin-dashboaed-text10 {
   color: rgba(255, 255, 255, 1);
   width: 68px;
   height: auto;
   text-align: left;
   line-height: 24px;
+}
+.admin-dashboaed-car-availablity {
+  gap: 16px;
+  top: 22px;
+  left: 316px;
+  width: 942px;
+  display: flex;
+  padding: 32px 28px 40px 28px;
+  position: absolute;
+  box-shadow: 0px 8px 24px 0px rgba(69, 69, 79, 0.10000000149011612) ;
+  align-items: flex-start;
+  border-radius: 8px;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 1);
+}
+.admin-dashboaed-header {
+  gap: 120px;
+  display: flex;
+  align-items: center;
+}
+.admin-dashboaed-text12 {
+  color: var(--dl-color-default-black);
+  height: auto;
+  text-align: left;
+  line-height: 24px;
+}
+.admin-dashboaed-input {
+  gap: 32px;
+  display: flex;
+  align-items: center;
+}
+.admin-dashboaed-frame40166 {
+  gap: 24px;
+  display: flex;
+  align-items: flex-start;
+}
+.admin-dashboaed-input1 {
+  gap: 12px;
+  display: flex;
+  padding: 12px 16px;
+  align-items: flex-start;
+  border-color: rgba(222, 222, 222, 1);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 8px;
+  padding-right: 12px 16px;
+  width: 188px;
+}
+.admin-dashboaed-frame2 {
+  gap: 8px;
+  display: flex;
+  padding: 0 16px 0 0;
+  align-items: flex-start;
+}
+.admin-dashboaed-text14 {
+  color: var(--dl-color-default-gray02);
+  width: 93px;
+  height: auto;
+  text-align: left;
+  line-height: 24px;
+}
+.admin-dashboaed-chevrondown {
+  width: 24px;
+  height: 24px;
+}
+.admin-dashboaed-input2 {
+  gap: 12px;
+  display: flex;
+  padding: 12px 16px;
+  align-items: flex-start;
+  border-color: rgba(222, 222, 222, 1);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 8px;
+}
+.admin-dashboaed-frame21 {
+  gap: 8px;
+  display: flex;
+  padding: 0 16px 0 0;
+  align-items: flex-start;
+}
+.admin-dashboaed-text16 {
+  color: var(--dl-color-default-gray02);
+  width: 93px;
+  height: auto;
+  text-align: left;
+  line-height: 24px;
+}
+.admin-dashboaed-chevrondown1 {
+  width: 24px;
+  height: 24px;
+}
+.admin-dashboaed-datetime {
+  gap: 12px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.admin-dashboaed-frame21 {
+  gap: -1px;
+  display: flex;
+  align-items: flex-start;
+}
+.admin-dashboaed-input3 {
+  gap: 12px;
+  display: flex;
+  padding: 12px 16px;
+  align-items: flex-start;
+  border-color: rgba(222, 222, 222, 1);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 8px 0 0 8px;
+}
+.admin-dashboaed-calendarcheck {
+  width: 24px;
+  height: 24px;
+}
+.admin-dashboaed-frame22 {
+  gap: 8px;
+  display: flex;
+  padding: 0 16px 0 0;
+  align-items: flex-start;
+}
+.admin-dashboaed-text18 {
+  color: var(--dl-color-default-gray02);
+  width: 104px;
+  height: auto;
+  text-align: left;
+  line-height: 24px;
+}
+.admin-dashboaed-input4 {
+  gap: 12px;
+  display: flex;
+  padding: 12px 16px;
+  align-items: flex-start;
+  border-color: rgba(222, 222, 222, 1);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0 8px 8px 0;
+}
+.admin-dashboaed-clock2 {
+  width: 24px;
+  height: 24px;
+}
+.admin-dashboaed-frame23 {
+  gap: 8px;
+  display: flex;
+  padding: 0 16px 0 0;
+  align-items: flex-start;
+}
+.admin-dashboaed-text20 {
+  color: var(--dl-color-default-gray02);
+  width: 47px;
+  height: auto;
+  text-align: left;
+  line-height: 24px;
+}
+.admin-dashboaed-chevrondown2 {
+  width: 24px;
+  height: 24px;
+}
+.admin-dashboaed-frame40123 {
+  gap: 64px;
+  display: flex;
+  padding: 12px 36px;
+  align-items: center;
+  border-radius: 4px;
+  background-color: var(--dl-color-default-green);
+}
+.admin-dashboaed-text22 {
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  font-size: 16px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 24px;
+  font-stretch: normal;
+  text-decoration: none;
 }
 .admin-dashboaed-live-flight-status {
   top: 238px;
@@ -468,18 +441,7 @@
   position: absolute;
   box-shadow: 0px 8px 24px 0px rgba(69, 69, 79, 0.10000000149011612) ;
   align-items: center;
-  justify-content: center;
   background-color: rgba(255, 255, 255, 1);
-}
-.admin-dashboaed-scrollbar {
-  top: 110px;
-  left: 794px;
-  width: 4px;
-  height: 64px;
-  opacity: 0.30;
-  z-index: 1;
-  position: absolute;
-  border-radius: 3px;
 }
 .admin-dashboaed-live-car-status {
   display: flex;
@@ -489,7 +451,7 @@
   border-radius: 8px;
   flex-direction: column;
 }
-.admin-dashboaed-header2 {
+.admin-dashboaed-header1 {
   gap: 12px;
   display: flex;
   align-items: flex-start;
@@ -1050,4 +1012,14 @@
   line-height: 24px;
   font-stretch: normal;
   text-decoration: none;
+}
+.admin-dashboaed-scrollbar {
+  top: 110px;
+  left: 794px;
+  width: 4px;
+  height: 64px;
+  opacity: 0.30;
+  z-index: 1;
+  position: absolute;
+  border-radius: 3px;
 }

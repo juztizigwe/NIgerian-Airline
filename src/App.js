@@ -13,6 +13,7 @@ import {  onAuthStateChanged } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 import { db } from './firebase';
 import { collection, addDoc, getDocs } from 'firebase/firestore';
+import AdminDashboard from "./Components/AdminDashboard/AdminDashboard";
 
 
 const App = () => {
@@ -54,6 +55,7 @@ const App = () => {
         <Route path="flights" element={<Flight />} />
         <Route path="tickets/:id" element={<Ticket />} />
         <Route path="/payment/:id" element={<Payment />} />
+        <Route path="admin" element={<AdminDashboard />} />
          
          {/* {
           flightId.map(x => <Route  path={`payment/:${x.id}`} element={<Payment />} />)
@@ -63,6 +65,7 @@ const App = () => {
       </Routes>
     </Router>
   );
+  
 };
 
 export default App;
