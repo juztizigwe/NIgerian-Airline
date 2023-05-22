@@ -77,7 +77,8 @@
   width: 423px;
   height: 92px;
   display: flex;
-  gap: 4px;
+  gap: 4px
+;
   /*position: absolute;*/
   align-items: flex-start;
   flex-shrink: 0;

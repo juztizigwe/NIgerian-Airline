@@ -155,16 +155,7 @@ const AdminDashboaed = (props) => {
                     className="admin-dashboaed-rectangle5"
                   />
                 </div>
-                <div className="admin-dashboaed-menu2">
-                  <img
-                    src="/playground_assets/menucari935-sk9r.svg"
-                    alt="MenuCarI935"
-                    className="admin-dashboaed-menu-car"
-                  />
-                  <span className="admin-dashboaed-text02">
-                    <span>Flight Attendants</span>
-                  </span>
-                </div>
+
                 <div className="admin-dashboaed-menu3">
                   <div className="admin-dashboaed-menu-booking">
                     <div className="admin-dashboaed-group">
@@ -182,16 +173,6 @@ const AdminDashboaed = (props) => {
                   </div>
                   <span className="admin-dashboaed-text04 ParagraphBody">
                     <span>Bookings</span>
-                  </span>
-                </div>
-                <div className="admin-dashboaed-menu4">
-                  <img
-                    src="/playground_assets/menubelli935-j87.svg"
-                    alt="MenuBellI935"
-                    className="admin-dashboaed-menu-bell"
-                  />
-                  <span className="admin-dashboaed-text06 ParagraphBody">
-                    <span>Notifications</span>
                   </span>
                 </div>
                 <div className="admin-dashboaed-menu5">
@@ -232,27 +213,27 @@ const AdminDashboaed = (props) => {
         <div className="admin-dashboaed-car-availablity">
           <div className="admin-dashboaed-header">
             <span className="admin-dashboaed-text12 HeaderH4">
-              <span>Flight Availablity</span>
+              <span> Create A Flight </span>
             </span>
           </div>
           <div className="admin-dashboaed-input">
             <div className="admin-dashboaed-frame40166">
               <div className="">
-                
+
                 <input
                 className='admin-dashboaed-input1'
-                placeholder='From route'
+                placeholder='From '
                 onChange={(e => setFromRoute(e.target.value))}
                 />
               </div>
               <div className="admin-dashboaed-input2">
-                <input 
+                <input
                 type='text'
-                placeholder='To Route'
+                placeholder='To '
                 onChange={(e => setToRoute(e.target.value))}
                 />
                 <br />
-                
+
               </div>
               <div className="admin-dashboaed-datetime">
                 <div className="admin-dashboaed-frame21 admin-dashboaed-frame21">
@@ -263,8 +244,8 @@ const AdminDashboaed = (props) => {
                     />
                   </div>
                   <div className="admin-dashboaed-input4">
-                    <input 
-                    type='text'
+                    <input
+                    type='time'
                     placeholder='Departure Time'
                     onChange={(e => setDepartureTime(e.target.value))}
                     />
@@ -275,25 +256,26 @@ const AdminDashboaed = (props) => {
                 <div className="admin-dashboaed-frame21 admin-dashboaed-frame21">
                   <div className="admin-dashboaed-input3">
                     <input
+                    type='time'
                     placeholder='Arrival Time'
                     onChange={(e => setArrivalTime(e.target.value))}
                     />
                   </div>
                   <div className="admin-dashboaed-input4">
-                    <input 
-                    type='text'
+                    <input
+                    type='Text'
                     onChange={(e => setTime(e.target.value))}
-                    placeholder='Time'
+                    placeholder='Duration'
                     />
                   </div>
                 </div>
                 <div>
-                  <input 
+                  <input
                   className='admin-dashboaed-input3'
                   placeholder='Price'
                   onChange={e => setPrice(e.target.value)}
                   />
-                  
+
                 </div>
                 <div className="admin-dashboaed-frame21 admin-dashboaed-frame21">
                   <div className="admin-dashboaed-input3">
@@ -303,7 +285,7 @@ const AdminDashboaed = (props) => {
                     />
                   </div>
                   <div className="admin-dashboaed-input4">
-                    <input 
+                    <input
                     type='text'
                     placeholder='acityid'
                     onChange={(e => setAcityid(e.target.value))}
@@ -319,7 +301,7 @@ const AdminDashboaed = (props) => {
             </button>
           </div>
         </div>
-        
+
         <div className="admin-dashboaed-live-flight-status">
           <div className="admin-dashboaed-live-car-status">
             <div className="admin-dashboaed-header1">
@@ -365,8 +347,8 @@ const AdminDashboaed = (props) => {
               </div>
             </div>
             {
-              
-                availableBooks.map(book => 
+
+                availableBooks.map(book =>
                   <Books
                    planeNumber={book.flightNumber}
                    displayName={book.displayName}
@@ -375,7 +357,7 @@ const AdminDashboaed = (props) => {
                   />
                   )
             }
-            
+
           </div>
           <img
             src="/playground_assets/scrollbar9367-mr5d-200w.png"
