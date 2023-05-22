@@ -234,6 +234,20 @@ const AdminDashboaed = (props) => {
                   className='admin-dashboaed-input3'
                   placeholder='Price'
                   />
+                  
+                </div>
+                <div className="admin-dashboaed-frame21 admin-dashboaed-frame21">
+                  <div className="admin-dashboaed-input3">
+                    <input
+                    placeholder='dcityid'
+                    />
+                  </div>
+                  <div className="admin-dashboaed-input4">
+                    <input 
+                    type='text'
+                    placeholder='acityid'
+                    />
+                  </div>
                 </div>
               </div>
             </div>
