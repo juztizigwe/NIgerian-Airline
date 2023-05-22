@@ -1,14 +1,78 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 
 import { Helmet } from 'react-helmet'
 import {  onAuthStateChanged } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
-import { db } from '../../firebase';
-import { collection, addDoc, getDocs } from 'firebase/firestore';
+import { auth, db } from '../../firebase';
+import { collection, addDoc, getDocs, getDoc, doc } from 'firebase/firestore';
 
 import './admin-dashboaed.css'
 
 const AdminDashboaed = (props) => {
+  const navigate = useNavigate()
+  const [user, setUser] = useState();
+  const [admin, setAdmin] = useState()
+  const AdminRef = doc(db, "admin", "gXODX6p9aQ3cIQ8gxDzp" );
+  const [email, setEmail] = useState([])
+
+
+  useEffect(() => {
+    onAuthStateChanged(auth, (user) => {
+      if (user) {
+        // User is signed in, see docs for a list of available properties
+        // https://firebase.google.com/docs/reference/js/firebase.User
+      setUser(user)
+        // ...
+        console.log(user)
+
+      } else {
+        // User is signed out
+        // ...
+
+        navigate("/login")
+      }
+    });
+  },[])
+
+  useEffect(() => {
+    const getAdmin = async () => {
+      try {
+        const data = await getDoc(AdminRef)
+        .then((doc) =>{
+         setAdmin(doc.data(), doc.id)
+        })
+       
+         
+    
+  
+     console.log(admin.email)
+      
+      
+     } catch(error) {
+       console.log(error)
+     }
+    
+   }
+   getAdmin()
+ },[])
+
+   useEffect(() => {
+     const verifyAdmin = async () => {
+      try {
+      if (admin.email[0]  || admin.email[1] || admin.email[2] === user.email) {
+        return
+      } else {
+        alert("dont come here again")
+       navigate("/book")
+      }
+
+      } catch(e) {
+        console.log(e)
+      }
+     }
+     verifyAdmin()
+   },[])
+ 
   return (
     <div className="admin-dashboaed-container">
       <Helmet>
@@ -39,6 +103,16 @@ const AdminDashboaed = (props) => {
                     className="admin-dashboaed-rectangle5"
                   />
                 </div>
+                <div className="admin-dashboaed-menu2">
+                  <img
+                    src="/playground_assets/menucari935-sk9r.svg"
+                    alt="MenuCarI935"
+                    className="admin-dashboaed-menu-car"
+                  />
+                  <span className="admin-dashboaed-text02">
+                    <span>Flight Attendants</span>
+                  </span>
+                </div>
                 <div className="admin-dashboaed-menu3">
                   <div className="admin-dashboaed-menu-booking">
                     <div className="admin-dashboaed-group">
@@ -56,6 +130,16 @@ const AdminDashboaed = (props) => {
                   </div>
                   <span className="admin-dashboaed-text04 ParagraphBody">
                     <span>Bookings</span>
+                  </span>
+                </div>
+                <div className="admin-dashboaed-menu4">
+                  <img
+                    src="/playground_assets/menubelli935-j87.svg"
+                    alt="MenuBellI935"
+                    className="admin-dashboaed-menu-bell"
+                  />
+                  <span className="admin-dashboaed-text06 ParagraphBody">
+                    <span>Notifications</span>
                   </span>
                 </div>
                 <div className="admin-dashboaed-menu5">
@@ -261,132 +345,8 @@ const AdminDashboaed = (props) => {
                   </span>
                 </div>
               </div>
-              <div className="admin-dashboaed-item1">
-                <div className="admin-dashboaed-frame40182">
-                  <div className="admin-dashboaed-frame40179">
-                    <div className="admin-dashboaed-frame40176">
-                      <div className="admin-dashboaed-frame40173">
-                        <span className="admin-dashboaed-text50 ParagraphP5">
-                          <span>02</span>
-                        </span>
-                        <div className="admin-dashboaed-frame39987">
-                          <span className="admin-dashboaed-text52 HeaderH5">
-                            <span>5665</span>
-                          </span>
-                        </div>
-                      </div>
-                      <div className="admin-dashboaed-frame39989">
-                        <img
-                          src="/playground_assets/ellipse79365-706-200h.png"
-                          alt="Ellipse79365"
-                          className="admin-dashboaed-ellipse71"
-                        />
-                        <span className="admin-dashboaed-text54">
-                          <span>Razib Rahman</span>
-                        </span>
-                      </div>
-                    </div>
-                    <div className="admin-dashboaed-frame39990">
-                      <div className="admin-dashboaed-pending">
-                        <div className="admin-dashboaed-group11">
-                          <img
-                            src="/playground_assets/ellipse1i936-emf-200h.png"
-                            alt="Ellipse1I936"
-                            className="admin-dashboaed-ellipse11"
-                          />
-                          <img
-                            src="/playground_assets/ellipse2i936-yx7-200h.png"
-                            alt="Ellipse2I936"
-                            className="admin-dashboaed-ellipse21"
-                          />
-                        </div>
-                      </div>
-                      <span className="admin-dashboaed-text56 ParagraphP4">
-                        <span>Pending</span>
-                      </span>
-                    </div>
-                  </div>
-                  <span className="admin-dashboaed-text58 ParagraphP4">
-                    <span>$ 0.00</span>
-                  </span>
-                </div>
-                <div className="admin-dashboaed-frame39988">
-                  <span className="admin-dashboaed-text60">
-                    <span>
-                      Details
-                      <span
-                        dangerouslySetInnerHTML={{
-                          __html: ' ',
-                        }}
-                      />
-                    </span>
-                  </span>
-                </div>
-              </div>
-              <div className="admin-dashboaed-item2">
-                <div className="admin-dashboaed-frame40183">
-                  <div className="admin-dashboaed-frame40180">
-                    <div className="admin-dashboaed-frame40175">
-                      <div className="admin-dashboaed-frame40174">
-                        <span className="admin-dashboaed-text62 ParagraphP5">
-                          <span>03</span>
-                        </span>
-                        <div className="admin-dashboaed-frame39992">
-                          <span className="admin-dashboaed-text64 HeaderH5">
-                            <span>1755</span>
-                          </span>
-                        </div>
-                      </div>
-                      <div className="admin-dashboaed-frame39994">
-                        <img
-                          src="/playground_assets/ellipse79366-xqte-200h.png"
-                          alt="Ellipse79366"
-                          className="admin-dashboaed-ellipse72"
-                        />
-                        <span className="admin-dashboaed-text66">
-                          <span>Luke Norton</span>
-                        </span>
-                      </div>
-                    </div>
-                    <div className="admin-dashboaed-frame39995">
-                      <button className="admin-dashboaed-radiobutton">
-                        <div className="admin-dashboaed-inroute">
-                          <div className="admin-dashboaed-group12">
-                            <img
-                              src="/playground_assets/ellipse1i936-cffr-200h.png"
-                              alt="Ellipse1I936"
-                              className="admin-dashboaed-ellipse12"
-                            />
-                            <img
-                              src="/playground_assets/ellipse2i936-4qbi-200h.png"
-                              alt="Ellipse2I936"
-                              className="admin-dashboaed-ellipse22"
-                            />
-                          </div>
-                        </div>
-                      </button>
-                      <span className="admin-dashboaed-text68 ParagraphP4">
-                        <span>In route</span>
-                      </span>
-                    </div>
-                  </div>
-                  <span className="admin-dashboaed-text70 ParagraphP4">
-                    <span>$ 23.50</span>
-                  </span>
-                </div>
-                <div className="admin-dashboaed-frame39993">
-                  <span className="admin-dashboaed-text72">
-                    <span>
-                      Details
-                      <span
-                        dangerouslySetInnerHTML={{
-                          __html: ' ',
-                        }}
-                      />
-                    </span>
-                  </span>
-                </div>
-              </div>
+           
+            
             </div>
           </div>
           <img

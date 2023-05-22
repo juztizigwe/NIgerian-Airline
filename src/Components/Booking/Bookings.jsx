@@ -53,7 +53,7 @@ const Booking = (props) => {
         if (user) {
           // User is signed in, see docs for a list of available properties
           // https://firebase.google.com/docs/reference/js/firebase.User
-       console.log(user)
+       console.log(user.email)
 
           // ...
         } else {
@@ -76,7 +76,7 @@ const Booking = (props) => {
           
           setStartPoint(filteredData[0].from)
           setFinishPoint(filteredData[0].to)
-          console.log(filteredData)
+          console.log(filteredData[0].from)
         } catch(error) {
           console.log(error)
         }
