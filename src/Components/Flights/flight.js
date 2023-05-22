@@ -5,12 +5,9 @@ import { auth } from '../../firebase';
 import {  onAuthStateChanged } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 import { db } from '../../firebase';
-
 import { collection, addDoc, getDocs } from 'firebase/firestore';
-
 import './flight.css'
 import BookContainer from './BookContainer';
-
 const Flight = (props) => {
     const AvalaibleFlightsRef = collection(db, "AvailableFlights")
     const navigate = useNavigate()
@@ -78,18 +75,12 @@ const Flight = (props) => {
                 />
                 )
             }
-        
 
           </div>
           <span className="flight-text56">
             <span>Available Flights</span>
           </span>
         </div>
-        <img
-          src="/playground_assets/plane23219-xhr-300h.png"
-          alt="Plane23219"
-          className="flight-plane2"
-        />
       </div>
     </div>
   )
