@@ -1,11 +1,12 @@
 import React, {useState, useEffect} from 'react'
 
 import { Helmet } from 'react-helmet'
-import {  onAuthStateChanged } from "firebase/auth";
+import {  onAuthStateChanged, signOut } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 import { auth, db } from '../../firebase';
 import { collection, addDoc, getDocs, getDoc, doc } from 'firebase/firestore';
 import Books from "./Books"
+
 
 import './admin-dashboaed.css'
 
@@ -124,6 +125,14 @@ const AdminDashboaed = (props) => {
    }
    getAvailableBooks()
  },[])
+    const logout = async () => {
+      try{
+        await signOut(auth)
+        navigate("/login")
+      } catch (err) {
+        alert(err.message)
+      }
+    }  
 
   return (
     <div className="admin-dashboaed-container">
@@ -195,7 +204,7 @@ const AdminDashboaed = (props) => {
               </div>
             </div>
           </div>
-          <div className="admin-dashboaed-logout">
+          <div onClick={logout} className="admin-dashboaed-logout">
             <div className="admin-dashboaed-logout1">
               <div className="admin-dashboaed-frame39997">
                 <img
