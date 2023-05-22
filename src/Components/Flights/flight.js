@@ -37,11 +37,12 @@ const Flight = (props) => {
         const data = await getDocs(AvalaibleFlightsRef)
         const filteredData =data.docs.map((doc) => ({
           ...doc.data(),
-          id:doc.id,
+          id:doc.id
         }));
         
         
         setflights(filteredData)
+        console.log(filteredData)
        
       } catch(error) {
         console.log(error)

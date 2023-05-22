@@ -48,8 +48,9 @@ const Ticket = (props) => {
        .then((doc) =>{
         setTicketDetail(doc.data(), doc.id)
        })
-     console.log(ticketDetail)
+    
        setdcityid(ticketDetail.dcityid)
+       console.log(ticketDetail)
 
 
      } catch(error) {

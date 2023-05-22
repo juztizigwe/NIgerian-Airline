@@ -553,6 +553,7 @@
   height: auto;
   text-align: left;
   line-height: 18px;
+  margin-left: 70px;
 }
 .admin-dashboaed-text36 {
   color: var(--dl-color-default-gray02);
@@ -687,6 +688,8 @@
   height: auto;
   text-align: left;
   line-height: normal;
+  margin-left: 48px;
+
 }
 .admin-dashboaed-text46 {
   color: var(--dl-color-default-gray02);

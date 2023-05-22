@@ -5,6 +5,7 @@ import {  onAuthStateChanged } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 import { auth, db } from '../../firebase';
 import { collection, addDoc, getDocs, getDoc, doc } from 'firebase/firestore';
+import Books from "./Books"
 
 import './admin-dashboaed.css'
 
@@ -13,6 +14,7 @@ const AdminDashboaed = (props) => {
   const [user, setUser] = useState();
   const [admin, setAdmin] = useState()
   const AdminRef = doc(db, "admin", "gXODX6p9aQ3cIQ8gxDzp" );
+  const AvalaibleBooks = collection(db, "ticket")
   const AvalaibleFlightsRef = collection(db, "AvailableFlights")
   const [email, setEmail] = useState([])
   const [fromRoute, setFromRoute] = useState("")
@@ -24,7 +26,7 @@ const AdminDashboaed = (props) => {
   const [price, setPrice] = useState("")
   const [dcityid, setDcityid] = useState("")
   const [acityid, setAcityid] = useState("")
-
+  const [availableBooks, setAvailableBooks] = useState([])
 
   useEffect(() => {
     onAuthStateChanged(auth, (user) => {
@@ -103,6 +105,26 @@ const AdminDashboaed = (props) => {
      verifyAdmin()
    },[])
  
+   useEffect(() => {
+    const getAvailableBooks = async () => {
+     try {
+       const data = await getDocs(AvalaibleBooks)
+       const filteredData =data.docs.map((doc) => ({
+         ...doc.data(),
+         id:doc.id
+       }));
+       
+       
+       setAvailableBooks(filteredData)
+      
+     } catch(error) {
+       console.log(error)
+     }
+    
+   }
+   getAvailableBooks()
+ },[])
+
   return (
     <div className="admin-dashboaed-container">
       <Helmet>
@@ -342,65 +364,18 @@ const AdminDashboaed = (props) => {
                 </span>
               </div>
             </div>
-            <div className="admin-dashboaed-carlist">
-              <div className="admin-dashboaed-item">
-                <div className="admin-dashboaed-frame40181">
-                  <div className="admin-dashboaed-frame40178">
-                    <div className="admin-dashboaed-frame40177">
-                      <div className="admin-dashboaed-frame40172">
-                        <span className="admin-dashboaed-text38 ParagraphP5">
-                          <span>01</span>
-                        </span>
-                        <div className="admin-dashboaed-frame39984">
-                          <span className="admin-dashboaed-text40 HeaderH5">
-                            <span>6465</span>
-                          </span>
-                        </div>
-                      </div>
-                      <div className="admin-dashboaed-frame39982">
-                        <img
-                          src="/playground_assets/ellipse79363-pdnq-200h.png"
-                          alt="Ellipse79363"
-                          className="admin-dashboaed-ellipse7"
-                        />
-                        <span className="admin-dashboaed-text42">
-                          <span>Alex Noman</span>
-                        </span>
-                      </div>
-                    </div>
-                    <div className="admin-dashboaed-frame39985">
-                      <div className="admin-dashboaed-completed">
-                        <div className="admin-dashboaed-group1">
-                          <img
-                            src="/playground_assets/ellipse1i936-yod-200h.png"
-                            alt="Ellipse1I936"
-                            className="admin-dashboaed-ellipse1"
-                          />
-                          <img
-                            src="/playground_assets/ellipse2i936-cvop-200h.png"
-                            alt="Ellipse2I936"
-                            className="admin-dashboaed-ellipse2"
-                          />
-                        </div>
-                      </div>
-                      <span className="admin-dashboaed-text44 ParagraphP4">
-                        <span>Completed</span>
-                      </span>
-                    </div>
-                  </div>
-                  <span className="admin-dashboaed-text46 ParagraphP4">
-                    <span>$ 35.44</span>
-                  </span>
-                </div>
-                <div className="admin-dashboaed-frame39964">
-                  <span className="admin-dashboaed-text48">
-                    <span>Details</span>
-                  </span>
-                </div>
-              </div>
-           
+            {
+              
+                availableBooks.map(book => 
+                  <Books
+                   planeNumber={book.flightNumber}
+                   displayName={book.displayName}
+                   seat={book.flightSeat}
+                   departureTime={book.departureTime}
+                  />
+                  )
+            }
             
-            </div>
           </div>
           <img
             src="/playground_assets/scrollbar9367-mr5d-200w.png"
