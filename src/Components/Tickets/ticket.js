@@ -100,7 +100,7 @@ const Ticket = (props) => {
                       className="planeiconw"
                   />
                   <span className="fts-text">
-                  <span>{ticketDetail.dcityid}</span>
+                  <span>{ticketDetail.acityid}</span>
                 </span>
                 </div>
           </div>

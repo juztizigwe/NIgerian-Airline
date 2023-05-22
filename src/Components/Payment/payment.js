@@ -101,12 +101,6 @@ const Payment = (props) => {
         <title>Payment</title>
       </Helmet>
       <div className="payment-payment">
-        
-        <img
-          src="/playground_assets/plane134719-laz-500h.png"
-          alt="Plane134719"
-          className="payment-plane13"
-        />
         <div className="payment-frame5"></div>
         <div className="payment-sign-up-cont">
           <div className="payment-cont">

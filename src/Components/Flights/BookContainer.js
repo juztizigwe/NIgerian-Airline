@@ -28,11 +28,9 @@ const BookContainer = ({departureCity, ArrivalCity, departureTime, price, flight
     <span className="flight-text04">
       <span>{flightTime}</span>
     </span>
-    <img
-      src="/playground_assets/line13475-fe18.svg"
-      alt="Line13475"
-      className="flight-line1"
-    />
+    <span className="flight-text10">
+  <span>{price}</span>
+</span>
   </div>
   <div className="flight-frame1">
     <span className="flight-text06">
@@ -43,9 +41,6 @@ const BookContainer = ({departureCity, ArrivalCity, departureTime, price, flight
     </span>
   </div>
 </div>
-<span className="flight-text10">
-  <span>{price}</span>
-</span>
 <button onClick={submit} className='flight-rectangle10'>
  <h1 className="flight-text12">
   <span>Book</span>
