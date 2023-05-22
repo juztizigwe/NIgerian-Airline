@@ -101,117 +101,107 @@ const Payment = (props) => {
         <title>Payment</title>
       </Helmet>
       <div className="payment-payment">
-        <div className="payment-frame5"></div>
-        <div className="payment-sign-up-cont">
-          <div className="payment-cont">
-            <div className="payment-body">
-              <div className="payment-signin">
+        <img
+            src="/playground_assets/plane155878-ry7z-500h.png"
+            alt="Plane155878"
+            className="payment-plane15"
+        />
+        <div className="payment-cont">
+              <div className="payment-body">
+
                 <span className="payment-text">
-                  <span>Pamyment</span>
+                  <span>Welcome !</span>
                 </span>
-                <span className="payment-text02">
+                <span className="payment-text">Payment</span>
+                <span className="subtitle">
                   <span>
                     Make your payment to schedule your flight
+                    <span
+                    dangerouslySetInnerHTML={{
+                      __html: ' ',
+                    }}
+                    />
+                  </span>
+                </span>
+
+
+                <div className="payment-card-details">
+                  <div className="label">
+                    <span className="subtitle">
+                      <span>Card Number</span>
+                    </span>
+
+                    <div className="input">
+                      <input
+                       onChange={(e => setCardNumber(e.target.value))}
+                      type='text'
+                      className='payment-input'
+                      placeholder='xxxxxxxxxxxxxxxxxxxx'
+                      />
+
+                      <img
+                          src="/playground_assets/plane124720-ysnge-200h.png"
+                          alt="Plane124720"
+                          className="payment-plane12"
+                      />
+                    </div>
+
+                  </div>
+
+                  <div className="label">
+                    <span className="subtitle">
+                      <span>CVV Number</span>
+                    </span>
+
+                    <div className="input">
+                      <input
+                      onChange={(e => setCvvNumber(e.target.value))}
+                      type='text'
+                      placeholder='Enter the 3 digits or 4 digits on the card'
+                      className='payment-input'
+                      />
+
+                    </div>
+                  </div>
+
+                  <div className="label">
+                    <span className="subtitle">
+                      <span>Expiry Date</span>
+                    </span>
+
+                    <div className="input">
+                      <input
+                      onChange={(e => setExpiryDate(e.target.value))}
+                      className='payment-input'
+                      placeholder='12/25'
+                      />
+                    </div>
+
+                  </div>
+
+                  <button onClick={submit} className="payment-sign-up-button">
+                    <span className="payment-submit">
+                      <span>Pay Now {paymentDetail.price} </span>
+                    </span>
+                  </button>
+                </div>
+
+                <div className="cancel">
+                  <span className="subtitle">
+                    Cancel payment?
+
                     <span
                       dangerouslySetInnerHTML={{
                         __html: ' ',
                       }}
                     />
                   </span>
-                </span>
+                    <Link to="/book" >
+                    <span>Exit</span>
+                    </Link>
+                </div>
               </div>
-              <span className="payment-text04">
-                <span>Welcome !</span>
-              </span>
-              <div className="payment-card-details">
-                <div className="payment-card-number">
-                  <span className="payment-text06">
-                    <span>Card Number</span>
-                  </span>
-                  <div className="payment-group20">
-                    <input 
-                     onChange={(e => setCardNumber(e.target.value))}
-                    type='text'
-                    className='payment-rectangle4'
-                    placeholder='xxxxxxxxxxxxxxxxxxxx'
-                    />
-                    
-                  </div>
-                  <img
-                    src="/playground_assets/plane124720-ysnge-200h.png"
-                    alt="Plane124720"
-                    className="payment-plane12"
-                  />
-                </div>
-                <div className="payment-cvv">
-                  <span className="payment-text10">
-                    <span>CVV Number</span>
-                  </span>
-                  <div className="payment-group201">
-                  <input
-                  onChange={(e => setCvvNumber(e.target.value))}
-                  type='text'
-                  placeholder='Enter the 3 digits or 4 digits on the card'
-                  className='payment-rectangle41'
-                  />
-                  
-                    <span className="payment-text12">
-                      <span></span>
-                    </span>
-                  </div>
-                </div>
-                <div className="payment-expiry-date">
-                  <span className="payment-text14">
-                    <span>Expiry Date</span>
-                  </span>
-                  <div className="payment-group202">
-                    <input
-                    onChange={(e => setExpiryDate(e.target.value))}
-                    className='payment-rectangle42'
-                    placeholder='12/25'
-                    />
-                    
-                  </div>
-                </div>
-           
-                <button onClick={submit} className="payment-sign-up-button">
-                  <span className="payment-text22">
-                    <span>Pay Now {paymentDetail.price} </span>
-                  </span>
-                </button>
-              </div>
-              <span className="payment-text24">
-                <span className="payment-text25">
-                  Cancel payment?
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: ' ',
-                    }}
-                  />
-                </span>
-                  <Link to="/book" >
-                  <span>Booking</span>
-                  </Link>
-                
-              </span>
-            </div>
           </div>
-        </div>
-        <img
-          src="/playground_assets/plane124923-zuk-500h.png"
-          alt="Plane124923"
-          className="payment-plane121"
-        />
-        <img
-          src="/playground_assets/plane145877-0da-500h.png"
-          alt="Plane145877"
-          className="payment-plane14"
-        />
-        <img
-          src="/playground_assets/plane155878-ry7z-500h.png"
-          alt="Plane155878"
-          className="payment-plane15"
-        />
       </div>
     </div>
   )
