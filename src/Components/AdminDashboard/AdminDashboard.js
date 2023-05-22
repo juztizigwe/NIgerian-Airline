@@ -13,7 +13,17 @@ const AdminDashboaed = (props) => {
   const [user, setUser] = useState();
   const [admin, setAdmin] = useState()
   const AdminRef = doc(db, "admin", "gXODX6p9aQ3cIQ8gxDzp" );
+  const AvalaibleFlightsRef = collection(db, "AvailableFlights")
   const [email, setEmail] = useState([])
+  const [fromRoute, setFromRoute] = useState("")
+  const [toRoute, setToRoute] = useState("")
+  const [date, setDate] = useState("")
+  const [departureTime, setDepartureTime] = useState("")
+  const [arrivalTime, setArrivalTime]  = useState("")
+  const [time, setTime] = useState("")
+  const [price, setPrice] = useState("")
+  const [dcityid, setDcityid] = useState("")
+  const [acityid, setAcityid] = useState("")
 
 
   useEffect(() => {
@@ -55,6 +65,26 @@ const AdminDashboaed = (props) => {
    }
    getAdmin()
  },[])
+
+ const submit = async() => {
+  try {
+    await addDoc(AvalaibleFlightsRef, {
+      ArrivalCity: toRoute,
+      departureCity: fromRoute,
+      ArrivalTime: arrivalTime,
+      Time: time,
+      acityid: acityid,
+      dcityid: dcityid,
+      departureDate: date,
+      departureTime: departureTime,
+      price: price,
+    
+  })
+  } catch(e) {
+    alert(e.message)
+  }
+   
+}
 
    useEffect(() => {
      const verifyAdmin = async () => {
@@ -190,12 +220,14 @@ const AdminDashboaed = (props) => {
                 <input
                 className='admin-dashboaed-input1'
                 placeholder='From route'
+                onChange={(e => setFromRoute(e.target.value))}
                 />
               </div>
               <div className="admin-dashboaed-input2">
                 <input 
                 type='text'
                 placeholder='To Route'
+                onChange={(e => setToRoute(e.target.value))}
                 />
                 <br />
                 
@@ -205,12 +237,14 @@ const AdminDashboaed = (props) => {
                   <div className="admin-dashboaed-input3">
                     <input
                     type='date'
+                    onChange={(e => setDate(e.target.value))}
                     />
                   </div>
                   <div className="admin-dashboaed-input4">
                     <input 
                     type='text'
                     placeholder='Departure Time'
+                    onChange={(e => setDepartureTime(e.target.value))}
                     />
                   </div>
                 </div>
@@ -220,11 +254,13 @@ const AdminDashboaed = (props) => {
                   <div className="admin-dashboaed-input3">
                     <input
                     placeholder='Arrival Time'
+                    onChange={(e => setArrivalTime(e.target.value))}
                     />
                   </div>
                   <div className="admin-dashboaed-input4">
                     <input 
                     type='text'
+                    onChange={(e => setTime(e.target.value))}
                     placeholder='Time'
                     />
                   </div>
@@ -233,6 +269,7 @@ const AdminDashboaed = (props) => {
                   <input 
                   className='admin-dashboaed-input3'
                   placeholder='Price'
+                  onChange={e => setPrice(e.target.value)}
                   />
                   
                 </div>
@@ -240,18 +277,20 @@ const AdminDashboaed = (props) => {
                   <div className="admin-dashboaed-input3">
                     <input
                     placeholder='dcityid'
+                    onChange={(e => setDcityid(e.target.value))}
                     />
                   </div>
                   <div className="admin-dashboaed-input4">
                     <input 
                     type='text'
                     placeholder='acityid'
+                    onChange={(e => setAcityid(e.target.value))}
                     />
                   </div>
                 </div>
               </div>
             </div>
-            <button className="admin-dashboaed-frame40123">
+            <button onClick={submit} className="admin-dashboaed-frame40123">
               <span className="admin-dashboaed-text22">
                 <span>Set</span>
               </span>
