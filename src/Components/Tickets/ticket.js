@@ -17,23 +17,27 @@ const Ticket = (props) => {
   const [user, setUser] = useState()
   const [ticketDetail, setTicketDetail] = useState("")
   const {id} = useParams()
+  const UserTicketsRef = doc(db, "tickets", id)
+  const [dcityid, setdcityid] = useState("")
+
   const UserTicketsRef = doc(db, "ticket", id)
   const [departureCity, setDepatureCity] = useState("")
   const [arrivalCity, setArrivalCity] = useState("")
+>>>>>>> 3c6e3a8cbaf9bb287f5f4cb295f0dcd3361216a2
 
   useEffect(() => {
     onAuthStateChanged(auth, (user) => {
       if (user) {
         // User is signed in, see docs for a list of available properties
         // https://firebase.google.com/docs/reference/js/firebase.User
-          
+
         // ..
         setUser(user)
       } else {
         // User is signed out
         // ...
 
-        
+
       }
     });
   },[])
@@ -45,18 +49,22 @@ const Ticket = (props) => {
         setTicketDetail(doc.data(), doc.id)
        })
      console.log(ticketDetail)
+<<<<<<< HEAD
+       setdcityid(ticketDetail.dcityid)
+=======
        setDepatureCity(ticketDetail.departureCity)
        setArrivalCity(ticketDetail.ArrivalCity)
-      
-      
+>>>>>>> 3c6e3a8cbaf9bb287f5f4cb295f0dcd3361216a2
+
+
      } catch(error) {
        console.log(error)
      }
-    
+
    }
    getUserTickets()
  },[])
-  
+
   return (
     <div className="ticket-container">
       <Helmet>
@@ -96,7 +104,7 @@ const Ticket = (props) => {
                       className="planeiconw"
                   />
                   <span className="fts-text">
-                  <span>{ticketDetail.arrivalCity}</span>
+                  <span>{ticketDetail.dcityid}</span>
                 </span>
                 </div>
           </div>
