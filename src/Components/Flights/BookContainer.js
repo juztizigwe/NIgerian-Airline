@@ -5,7 +5,7 @@ import './flight.css'
 
 
 
-const BookContainer = ({departureCity, ArrivalCity, departureTime, price, flightTime, id}) => {
+const BookContainer = ({departureCity, ArrivalCity, departureTime, ArrivalTime, price, flightTime, id}) => {
     const navigate = useNavigate()
     const submit = () => {
         navigate(`/payment/${id}`)
@@ -37,7 +37,7 @@ const BookContainer = ({departureCity, ArrivalCity, departureTime, price, flight
       <span>{ArrivalCity}</span>
     </span>
     <span className="flight-text08">
-      <span>11:50</span>
+      <span>{ArrivalTime}</span>
     </span>
   </div>
 </div>

@@ -70,7 +70,8 @@ const Flight = (props) => {
                 departureCity={flight.departureCity}
                 price={flight.price}
                 flightTime={flight.Time}
-                 departureTime={flight.departureTime}
+                ArrivalTime={flight.ArrivalTime}
+                departureTime={flight.departureTime}
                 id={flight.id}
                 key={flight.id}
                 />
