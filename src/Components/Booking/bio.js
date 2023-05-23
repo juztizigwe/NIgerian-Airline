@@ -1,7 +1,7 @@
 import {Helmet} from "react-helmet";
 import {Link} from "react-router-dom";
 import React, {useState, useEffect} from 'react'
-
+import navbar from "../LandingPage/Navbar";
 import {auth} from "../../firebase";
 import {onAuthStateChanged} from "firebase/auth";
 import {useNavigate} from "react-router-dom";
@@ -10,10 +10,12 @@ import {useParams} from "react-router-dom";
 import {addDoc, collection, doc, getDocs, setDoc} from "firebase/firestore";
 
 import './../Payment/payment.css'
+import Navbar from "../LandingPage/Navbar";
 // import * as path from "path";
 
-const Bio = (props) => {
+const Bio = (props)  => {
     const {id} = useParams()
+    const UserFlightsRef = doc(db, "AvailableFlights", id)
     const [user, setUser] = useState();
     const User = collection(db,  "User")
     const [name, setName] = useState("")
@@ -30,7 +32,7 @@ const Bio = (props) => {
                 Age: age,
                 PhoneNumber: number,
 
-            }).then(navigate('/Payment'))
+            }).then(navigate('/payment'))
         } catch(e) {
             alert(e.message)
         }

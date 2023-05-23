@@ -5,7 +5,7 @@ import './flight.css'
 
 
 
-const BookContainer = ({departureCity, ArrivalCity, departureTime, ArrivalTime, price, flightTime, id}) => {
+const BookContainer = ({departureCity, ArrivalCity, departureTime, ArrivalTime, price, flightTime,  id}) => {
     const navigate = useNavigate()
     const submit = () => {
         navigate(`/bio/${id}`)
