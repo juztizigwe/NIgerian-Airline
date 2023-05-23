@@ -5,28 +5,14 @@ import { auth } from '../../firebase';
 import {  onAuthStateChanged } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 import { db } from '../../firebase';
-import { collection, addDoc, getDocs } from 'firebase/firestore';
+import { collection, addDoc, getDocs, getDoc } from 'firebase/firestore';
 import './flight.css'
 import BookContainer from './BookContainer';
 const Flight = (props) => {
     const AvalaibleFlightsRef = collection(db, "AvailableFlights")
     const navigate = useNavigate()
     const [flights, setflights] = useState([])
-  useEffect(() => {
-    onAuthStateChanged(auth, (user) => {
-      if (user) {
-        // User is signed in, see docs for a list of available properties
-        // https://firebase.google.com/docs/reference/js/firebase.User
-     
-        // ...
-      } else {
-        // User is signed out
-        // ...
-
-        navigate("/login")
-      }
-    });
-  },[])
+  
 
   useEffect(() => {
      const getAvailableFlights = async () => {

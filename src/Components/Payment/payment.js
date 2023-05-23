@@ -16,33 +16,19 @@ const Payment = (props) => {
   const {id} = useParams()
   const UserFlightsRef = doc(db, "AvailableFlights", id)
   const ticketRef = doc(db, "ticket", id)
+  const UserRef  = doc(db, "User", id)
   const [paymentDetail, setPaymentDetail] = useState("")
   const [cardNumber, setCardNumber] = useState("")
   const [cvvNumber, setCvvNumber] = useState("")
   const [expiryDate, setExpiryDate] = useState("")
   const [authId, setauthId] = useState("")
-
+  
  
   const [user, setUser] = useState("")
 
   const navigate = useNavigate()
 
-  useEffect(() => {
-    onAuthStateChanged(auth, (user) => {
-      if (user) {
-        // User is signed in, see docs for a list of available properties
-        // https://firebase.google.com/docs/reference/js/firebase.User
-          
-        // ..
-        setUser(user)
-      } else {
-        // User is signed out
-        // ...
-
-        
-      }
-    });
-  },[])
+  
 
   const submit =  async() => {
     if (cardNumber.length === 12, cvvNumber.length === 3||4, expiryDate.length === 4 ) {
@@ -55,7 +41,7 @@ const Payment = (props) => {
           departureCity: paymentDetail.departureCity,
           departureDate: paymentDetail.departureDate,
           departureTime: paymentDetail.departureTime,
-          displayName: user.email,
+          displayName: user.Name,
           flightNumber: Math.floor(Math.random()  * (10 - 1 + 1) +1),
           flightSeat: Math.floor(Math.random()  * (20 - 1 + 1) +1),
           dcityid: paymentDetail.dcityid,
@@ -95,6 +81,24 @@ const Payment = (props) => {
    getUserFlights()
  },[])
 
+ useEffect(() => {
+  const getUser = async () => {
+   try {
+     const data = await getDoc(UserRef)
+     .then((doc) =>{
+      setUser(doc.data(), doc.id)
+     })
+
+     
+     console.log(user)
+    
+   } catch(error) {
+     console.log(error)
+   }
+  
+ }
+ getUser()
+},[])
   return (
     <div className="payment-container">
       <Helmet>

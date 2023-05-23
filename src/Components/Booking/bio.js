@@ -17,7 +17,7 @@ const Bio = (props)  => {
     const {id} = useParams()
     const UserFlightsRef = doc(db, "AvailableFlights", id)
     const [user, setUser] = useState();
-    const User = collection(db,  "User")
+    const User = doc(db,  "User", id)
     const [name, setName] = useState("")
     const [age, setAge] = useState("")
     const [email, setEmail] = useState("")
@@ -26,13 +26,13 @@ const Bio = (props)  => {
     const navigate = useNavigate()
     const submit = async() => {
         try {
-            await addDoc(User, {
+            await setDoc(User, {
                 Name: name,
                 Email: email,
                 Age: age,
                 PhoneNumber: number,
 
-            }).then(navigate('/payment'))
+            }).then(navigate(`/payment/${id}`))
         } catch(e) {
             alert(e.message)
         }

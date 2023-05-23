@@ -57,7 +57,7 @@ const App = () => {
         <Route path="tickets/:id" element={<Ticket />} />
         <Route path="/payment/:id" element={<Payment />} />
         <Route path="admin" element={<AdminDashboard />} />
-          <Route path="/bio" element={<Bio />} />
+          <Route path="/bio/:id" element={<Bio />} />
 
           {/* {
           flightId.map(x => <Route  path={`payment/:${x.id}`} element={<Payment />} />)
