@@ -9,8 +9,8 @@ import {db} from "../../firebase";
 import {useParams} from "react-router-dom";
 import {addDoc, collection, doc, getDocs, setDoc} from "firebase/firestore";
 
-import './paymeny.css'
-import * as path from "path";
+import './../Payment/payment.css'
+// import * as path from "path";
 
 const Bio = (props) => {
     const {id} = useParams()
@@ -20,6 +20,22 @@ const Bio = (props) => {
     const [age, setAge] = useState("")
     const [email, setEmail] = useState("")
     const [number, setNumber] = useState("")
+
+    const navigate = useNavigate()
+    const submit = async() => {
+        try {
+            await addDoc(User, {
+                Name: name,
+                Email: email,
+                Age: age,
+                PhoneNumber: number,
+
+            }).then(navigate('/Payment'))
+        } catch(e) {
+            alert(e.message)
+        }
+
+    }
 
 return (
     <div className="payment-container">
@@ -67,7 +83,7 @@ return (
 
                             <div className="input">
                                 <input
-                                    onChange={(e => setCvvNumber(e.target.value))}
+                                    onChange={(e => setEmail(e.target.value))}
                                     type='email'
                                     placeholder='myemail@email.com'
                                     className='payment-input'
@@ -83,7 +99,7 @@ return (
 
                             <div className="input">
                                 <input
-                                    onChange={(e => setExpiryDate(e.target.value))}
+                                    onChange={(e => setAge(e.target.value))}
                                     type='number'
                                     className='payment-input'
                                     placeholder='18'
@@ -99,7 +115,7 @@ return (
 
                             <div className="input">
                                 <input
-                                    onChange={(e => setExpiryDate(e.target.value))}
+                                    onChange={(e => setNumber(e.target.value))}
                                     type='tel'
                                     className='payment-input'
                                     placeholder='+234 801 2345 678'
@@ -109,7 +125,7 @@ return (
 
                         <button onClick={submit} className="payment-sign-up-button">
                             <span className="payment-submit">
-                                <span>Pay Now {paymentDetail.price} </span>
+                                <span>Proceed </span>
                             </span>
                         </button>
                     </div>

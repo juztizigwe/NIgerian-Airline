@@ -9,6 +9,7 @@ import Booking from "./Components/Booking/Bookings";
 import Flight from "./Components/Flights/flight";
 import Ticket from "./Components/Tickets/ticket";
 import Payment from "./Components/Payment/payment";
+import Bio from "./Components/Booking/bio"
 import {  onAuthStateChanged } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 import { db } from './firebase';
@@ -56,8 +57,9 @@ const App = () => {
         <Route path="tickets/:id" element={<Ticket />} />
         <Route path="/payment/:id" element={<Payment />} />
         <Route path="admin" element={<AdminDashboard />} />
-         
-         {/* {
+          <Route path="/bio" element={<Bio />} />
+
+          {/* {
           flightId.map(x => <Route  path={`payment/:${x.id}`} element={<Payment />} />)
          } */}
         
