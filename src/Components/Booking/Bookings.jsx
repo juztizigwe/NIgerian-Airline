@@ -29,10 +29,12 @@ const Booking = (props) => {
   const roundTrip = (e) => {
     setClicked(true)
     alert(e.target.value)
-    alert(fromTrip)
+    
    
   }
-
+    const oneWay = (e) => {
+      setClicked(false)
+    }
   const submit = async() => {
     try {
       await addDoc(preBookDetaiRef, {
@@ -48,22 +50,7 @@ const Booking = (props) => {
     }
      navigate("/flights")
   }
-    useEffect(() => {
-      onAuthStateChanged(auth, (user) => {
-        if (user) {
-          // User is signed in, see docs for a list of available properties
-          // https://firebase.google.com/docs/reference/js/firebase.User
-       console.log(user.email)
-
-          // ...
-        } else {
-          // User is signed out
-          // ...
-          
-          navigate("/login")
-        }
-      });
-    },[])
+   
 
     useEffect(() => {
        const getFlightRoute = async () => {
@@ -202,10 +189,11 @@ const Booking = (props) => {
               onClick={roundTrip}
               value="round trip"
               type='radio'
+              
                 className="booking-ellipse3"
               />
               <span className="booking-text19">
-                <span>One-way</span>
+                <span onClick={oneWay}>One-way</span>
               </span>
               <span className="booking-text21">
                 <span>Round trip</span>
