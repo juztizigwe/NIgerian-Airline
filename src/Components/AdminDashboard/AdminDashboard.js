@@ -82,7 +82,7 @@ const AdminDashboaed = (props) => {
       departureTime: departureTime,
       price: price,
     
-  })
+  }).then(alert("Succesful"))
   } catch(e) {
     alert(e.message)
   }
@@ -347,11 +347,11 @@ const AdminDashboaed = (props) => {
                     </span>
                   </div>
                   <span className="admin-dashboaed-text34 Paragraph">
-                    <span>Status</span>
+                    <span>Seat</span>
                   </span>
                 </div>
                 <span className="admin-dashboaed-text36 Paragraph">
-                  <span>Payment</span>
+                  <span>Time</span>
                 </span>
               </div>
             </div>
