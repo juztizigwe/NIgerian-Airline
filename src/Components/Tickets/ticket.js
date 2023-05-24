@@ -60,6 +60,26 @@ const Ticket = (props) => {
    getUserTickets()
  },[])
 
+ useEffect(() => {
+  const getUser = async () => {
+   try {
+     const data = await getDoc(UserRef)
+     .then((doc) =>{
+      setUser(doc.data(), doc.id)
+     })
+  
+     setUser(ticketDetail)
+     console.log(ticketDetail)
+
+
+   } catch(error) {
+     console.log(error)
+   }
+
+ }
+ getUser()
+},[])
+
   return (
     <div className="ticket-container">
       <Helmet>
@@ -215,7 +235,7 @@ const Ticket = (props) => {
         <Link to="/"><span className='btn'>Exit</span></Link>
       </div>
       <div className="btn">
-        <Link to="/booking"><span className='btn'>Reschedule Flight</span></Link>
+        <Link to="/book"><span className='btn'>Reschedule Flight</span></Link>
       </div>
       <div className="btn">
         <Link to="/"><span className='btn'>Cancel Flight</span></Link>
