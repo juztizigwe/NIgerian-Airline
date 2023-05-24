@@ -153,7 +153,7 @@ const Book = (props) => {
          name={ticketDetail.displayName}
          flightNumber={ticketDetail.flightNumber}
          flighSeat={ticketDetail.flightSeat}
-         
+
          
          />
         )
