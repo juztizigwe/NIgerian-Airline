@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 
 
-const UserTicket = () => {
+const UserTicket = ({name, flightNumber, flighSeat}) => {
     <div className="admin-dashboaed-car-availablity">
     <div className="admin-dashboaed-item">
       <div className="admin-dashboaed-frame40181">
@@ -14,7 +14,7 @@ const UserTicket = () => {
                     </span>
               <div className="admin-dashboaed-frame39984">
                       <span className="admin-dashboaed-text40 HeaderH5">
-                        <span>{ticketDetail.displayName}</span>
+                        <span>{name}</span>
                       </span>
               </div>
             </div>
@@ -25,7 +25,7 @@ const UserTicket = () => {
                   className="admin-dashboaed-ellipse7"
               />
               <span className="admin-dashboaed-text42">
-                      <span>NA {ticketDetail.flightNumber}</span>
+                      <span>NA {flightNumber}</span>
                     </span>
             </div>
           </div>
@@ -45,7 +45,7 @@ const UserTicket = () => {
               </div>
             </div>
             <span className="admin-dashboaed-text44 ParagraphP4">
-                    <span>{ticketDetail.flightSeat}B</span>
+                    <span>{flighSeat}B</span>
                   </span>
           </div>
         </div>
@@ -55,10 +55,10 @@ const UserTicket = () => {
       </div>
       <div className="admin-dashboaed-frame39964">
               <span className="admin-dashboaed-text48">
-                <span>{ticketDetail.dcityid}</span>
+                <span>{}</span>
               </span>
             <span className="admin-dashboaed-text48">
-                <span>{ticketDetail.acityid}</span>
+                <span>{}</span>
               </span>
       </div>
     </div>
