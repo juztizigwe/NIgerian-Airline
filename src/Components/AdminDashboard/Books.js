@@ -17,9 +17,10 @@ const Book = (props) => {
   const [user, setUser] = useState()
   const [ticketDetail, setTicketDetail] = useState("")
   const {id} = useParams()
-  const [dcityid, setdcityid] = useState("")
+  const [dcityid, setdcityid] = useState([])
   // const UserRef  = doc(db, "User", id)
-  // const UserTicketsRef = doc(db, "ticket", id)
+  const AvalaibleBooks = collection(db, "ticket")
+  
   const [departureCity, setDepatureCity] = useState("")
   const [arrivalCity, setArrivalCity] = useState("")
 
@@ -41,24 +42,25 @@ const Book = (props) => {
     });
   },[])
   useEffect(() => {
-    const getUserTickets = async () => {
-      try {
-        const data = await getDoc(UserTicketsRef)
-            .then((doc) =>{
-              setTicketDetail(doc.data(), doc.id)
-            })
-  
-        setdcityid(ticketDetail.dcityid)
-        console.log(ticketDetail)
-  
-  
-      } catch(error) {
-        console.log(error)
-      }
-  
-    }
-    getUserTickets()
-  },[])
+    const getAvailableBooks = async () => {
+     try {
+       const data = await getDocs(AvalaibleBooks)
+       const filteredData =data.docs.map((doc) => ({
+         ...doc.data(),
+         id:doc.id
+       }));
+       
+       
+       console.log(filteredData)
+       console.log(ticketDetail)
+      
+     } catch(error) {
+       console.log(error)
+     }
+    
+   }
+   getAvailableBooks()
+ },[])
   const logout = async () => {
     try{
       await signOut(auth)
