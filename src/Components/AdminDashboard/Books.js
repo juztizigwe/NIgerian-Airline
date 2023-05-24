@@ -149,13 +149,15 @@ const Book = (props) => {
 
      {
       ticketDetails.map(ticketDetail => 
-         <UserTicket
-         name={ticketDetail.displayName}
-         flightNumber={ticketDetail.flightNumber}
-         flighSeat={ticketDetail.flightSeat}
+        <UserTicket
+          name={ticketDetail.displayName}
+          flightNumber={ticketDetail.flightNumber}
+          flightSeat={ticketDetail.flightSeat}
+          acity={ticketDetail.acityid}
+          dcityid={ticketDetail.dcityid}
 
-         
-         />
+          />
+          
         )
      }
       
