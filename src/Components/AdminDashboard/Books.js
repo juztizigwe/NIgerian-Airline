@@ -15,7 +15,7 @@ import { collection, addDoc, getDocs, getDoc, doc, setDoc } from 'firebase/fires
 const Book = (props) => {
   const navigate = useNavigate()
   const [user, setUser] = useState()
-  const [ticketDetail, setTicketDetail] = useState("")
+  const [ticketDetails, setTicketDetails] = useState([])
   const {id} = useParams()
   const [dcityid, setdcityid] = useState([])
   // const UserRef  = doc(db, "User", id)
@@ -51,8 +51,8 @@ const Book = (props) => {
        }));
        
        
-       console.log(filteredData)
-       console.log(ticketDetail)
+       setTicketDetails(filteredData)
+       console.log(ticketDetails)
       
      } catch(error) {
        console.log(error)
@@ -146,8 +146,9 @@ const Book = (props) => {
         </div>
 
 
-
-        <div className="admin-dashboaed-car-availablity">
+     {
+      ticketDetails.map(ticketDetail => 
+          <div className="admin-dashboaed-car-availablity">
           <div className="admin-dashboaed-item">
             <div className="admin-dashboaed-frame40181">
               <div className="admin-dashboaed-frame40178">
@@ -209,6 +210,9 @@ const Book = (props) => {
 
 
         </div>
+        )
+     }
+      
       </div>
 
 
