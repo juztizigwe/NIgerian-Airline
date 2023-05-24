@@ -238,7 +238,7 @@ const Ticket = (props) => {
         <Link to="/book"><span className='btn'>Reschedule Flight</span></Link>
       </div>
       <div className="btn">
-        <Link to="/"><span className='btn'>Cancel Flight</span></Link>
+        <Link to="/book"><span className='btn'>Cancel Flight</span></Link>
       </div>
     </div>
 
