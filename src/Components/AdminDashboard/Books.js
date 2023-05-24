@@ -40,25 +40,25 @@ const Book = (props) => {
       }
     });
   },[])
-  // useEffect(() => {
-  //   const getUserTickets = async () => {
-  //     try {
-  //       const data = await getDoc(UserTicketsRef)
-  //           .then((doc) =>{
-  //             setTicketDetail(doc.data(), doc.id)
-  //           })
-  //
-  //       setdcityid(ticketDetail.dcityid)
-  //       console.log(ticketDetail)
-  //
-  //
-  //     } catch(error) {
-  //       console.log(error)
-  //     }
-  //
-  //   }
-  //   getUserTickets()
-  // },[])
+  useEffect(() => {
+    const getUserTickets = async () => {
+      try {
+        const data = await getDoc(UserTicketsRef)
+            .then((doc) =>{
+              setTicketDetail(doc.data(), doc.id)
+            })
+  
+        setdcityid(ticketDetail.dcityid)
+        console.log(ticketDetail)
+  
+  
+      } catch(error) {
+        console.log(error)
+      }
+  
+    }
+    getUserTickets()
+  },[])
   const logout = async () => {
     try{
       await signOut(auth)
