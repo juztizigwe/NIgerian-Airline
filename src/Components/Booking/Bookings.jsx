@@ -170,37 +170,36 @@ const Booking = (props) => {
               </div>
             </div>
             <div className="booking-trip-type">
-              <img
-                src="/playground_assets/rectangle72291-m2vq-200h.png"
-                alt="Rectangle72291"
-                className="booking-rectangle7"
-              />
-              <img
-                src="/playground_assets/rectangle82293-pfm-200h.png"
-                alt="Rectangle82293"
-                className="booking-rectangle8"
-              />
               <div className="booking-component1">
-               <input type='radio' className='booking-ellipse1' />
-                
-              </div>
-              <input
 
-              onClick={roundTrip}
-              value="round trip"
-              type='radio'
-              
+               <input
+                  type='radio'
+                  className='booking-ellipse1'
+                  onClick={oneWay}
+                  name="trip-type"
+                  value="oneway"
+               />
+              </div>
+
+              <input
+                onClick={roundTrip}
+                value="roundtrip"
+                type='radio'
                 className="booking-ellipse3"
+                name="trip-type"
+
               />
               <span className="booking-text19">
-                <span onClick={oneWay}>One-way</span>
+                <span> One-way</span>
               </span>
               <span className="booking-text21">
                 <span>Round trip</span>
               </span>
+
             </div>
           </div>
         </div>
+
         <div className="booking-passeger">
           <div className="booking-group221">
             <span className="booking-text23">

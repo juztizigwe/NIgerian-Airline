@@ -15,6 +15,7 @@ import { useNavigate } from "react-router-dom";
 import { db } from './firebase';
 import { collection, addDoc, getDocs } from 'firebase/firestore';
 import AdminDashboard from "./Components/AdminDashboard/AdminDashboard";
+import Book from "./Components/AdminDashboard/Books";
 
 
 const App = () => {
@@ -48,7 +49,7 @@ const App = () => {
      
       <Routes>
         
-        <Route path="/home" element={<LandingPage />} />
+        <Route path="/" element={<LandingPage />} />
         <Route path="/contact" element={<Form />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<SignUp />} />
@@ -58,6 +59,7 @@ const App = () => {
         <Route path="/payment/:id" element={<Payment />} />
         <Route path="admin" element={<AdminDashboard />} />
           <Route path="/bio/:id" element={<Bio />} />
+          <Route path="/bookings" element={<Book />} />
 
           {/* {
           flightId.map(x => <Route  path={`payment/:${x.id}`} element={<Payment />} />)

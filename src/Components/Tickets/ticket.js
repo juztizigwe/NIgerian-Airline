@@ -17,9 +17,8 @@ const Ticket = (props) => {
   const [user, setUser] = useState()
   const [ticketDetail, setTicketDetail] = useState("")
   const {id} = useParams()
-  
   const [dcityid, setdcityid] = useState("")
-
+  const UserRef  = doc(db, "User", id)
   const UserTicketsRef = doc(db, "ticket", id)
   const [departureCity, setDepatureCity] = useState("")
   const [arrivalCity, setArrivalCity] = useState("")
@@ -67,13 +66,6 @@ const Ticket = (props) => {
         <title>Ticket</title>
       </Helmet>
         <div className="ticket-con">
-
-          {/*/!*BG Plane*!/*/}
-          {/*<img*/}
-          {/*    src="/playground_assets/plane168126-q36-1100w.png"*/}
-          {/*    alt="Plane168126"*/}
-          {/*    className="ticket-plane16"*/}
-          {/*/>*/}
           {/*Header*/}
           <img
               src="/playground_assets/rectangle117822-4rii-200h.png"
@@ -220,7 +212,13 @@ const Ticket = (props) => {
           />
         </div>
       <div className="btn">
-        <Link to="/home">Exit</Link>
+        <Link to="/"><span className='btn'>Exit</span></Link>
+      </div>
+      <div className="btn">
+        <Link to="/booking"><span className='btn'>Reschedule Flight</span></Link>
+      </div>
+      <div className="btn">
+        <Link to="/"><span className='btn'>Cancel Flight</span></Link>
       </div>
     </div>
 

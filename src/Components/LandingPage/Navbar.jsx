@@ -21,11 +21,11 @@ function Navbar() {
             />
          </a>
          <input type="checkbox" className="menu-btn" id="menu-btn"/>
-         <label className='menu-icon' for="menu-btn">
+         <label className='menu-icon'>
                 <span className="nav-icon"></span>
          </label>
          <ul className="menu" >
-            <li><Link to="/home">Home </Link></li>
+            <li><Link to="/"> </Link></li>
             <li><Link to="/login">Sign In </Link></li>
             <li><Link to="/contact">Contact</Link></li>
              <li><Link to="/book">Book A Flight</Link></li>

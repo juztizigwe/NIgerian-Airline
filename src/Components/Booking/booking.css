@@ -44,6 +44,8 @@
   align-items: flex-start;
   flex-shrink: 1;
 }
+
+/*noinspection ALL*/
 .booking-text {
   left: 6px;
   color: rgba(0, 0, 0, 1);
@@ -102,6 +104,8 @@
   text-align: center;
   font-weight: 10;
 }
+
+/*noinspection ALL*/
 .booking-text02 {
   top: 19px;
   left: 14.25px;
@@ -135,6 +139,8 @@
   height: 29px;
   position: absolute;
 }
+
+/*noinspection ALL*/
 .booking-text04 {
   top: -25px;
   color: rgba(0, 0, 0, 1);
@@ -171,6 +177,8 @@
   border-width: 0.6000000238418579px;
   border-radius: 6px;
 }
+
+/*noinspection ALL*/
 .booking-text06 {
   top: 19px;
   left: 14.25px;
@@ -204,6 +212,8 @@
   height: 29px;
   position: absolute;
 }
+
+/*noinspection ALL*/
 .booking-text08 {
   top: -25px;
   color: rgba(0, 0, 0, 1);
@@ -269,6 +279,8 @@
   align-items: flex-start;
   flex-shrink: 0;
 }
+
+/*noinspection ALL*/
 .booking-text10 {
   top: 7px;
   color: rgba(0, 0, 0, 1);
@@ -333,6 +345,8 @@
   height: 6px;
   position: absolute;
 }
+
+/*noinspection ALL*/
 .booking-vector5 {
   top: 1.1368683772161603e-13px;
   left: 3.921097755432129px;
@@ -347,6 +361,8 @@
   height: 6px;
   position: absolute;
 }
+
+/*noinspection ALL*/
 .booking-text12 {
   top: 19px;
   left: 27px;
@@ -383,6 +399,8 @@
   cursor: pointer;
   margin-bottom: 200px;
 }
+
+/*noinspection ALL*/
 .booking-text14 {
   top: 17px;
   left: 143px;
@@ -470,6 +488,8 @@
   border-style: solid;
   border-width: 0.6000000238418579px;
 }
+
+/*noinspection ALL*/
 .booking-text19 {
   top: 10px;
   left: 33px;
@@ -485,6 +505,8 @@
   font-stretch: normal;
   text-decoration: none;
 }
+
+/*noinspection ALL*/
 .booking-text21 {
   top: 10px;
   left: 161px;
@@ -520,6 +542,8 @@
   align-items: flex-start;
   flex-shrink: 0;
 }
+
+/*noinspection ALL*/
 .booking-text23 {
   top: 7px;
   color: rgba(0, 0, 0, 1);
@@ -582,6 +606,8 @@
   height: 8px;
   position: absolute;
 }
+
+/*noinspection ALL*/
 .booking-text28 {
   top: 19px;
   left: 27px;

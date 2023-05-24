@@ -22,7 +22,6 @@ const Bio = (props)  => {
     const [age, setAge] = useState("")
     const [email, setEmail] = useState("")
     const [number, setNumber] = useState("")
-
     const navigate = useNavigate()
     const submit = async() => {
         try {

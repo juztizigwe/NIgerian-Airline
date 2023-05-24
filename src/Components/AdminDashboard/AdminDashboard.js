@@ -5,6 +5,8 @@ import {  onAuthStateChanged, signOut } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 import { auth, db } from '../../firebase';
 import { collection, addDoc, getDocs, getDoc, doc } from 'firebase/firestore';
+import { Link } from 'react-router-dom'
+
 import Books from "./Books"
 
 
@@ -89,22 +91,22 @@ const AdminDashboaed = (props) => {
    
 }
 
-   useEffect(() => {
-     const verifyAdmin = async () => {
-      try {
-      if (admin.email[0]  || admin.email[1] || admin.email[2] === user.email) {
-        return
-      } else {
-        alert("dont come here again")
-       navigate("/book")
-      }
-
-      } catch(e) {
-        console.log(e)
-      }
-     }
-     verifyAdmin()
-   },[])
+   // useEffect(() => {
+   //   const verifyAdmin = async () => {
+   //    try {
+   //    if (admin.email[0]  || admin.email[1] || admin.email[2] === user.email) {
+   //      return
+   //    } else {
+   //      alert("dont come here again")
+   //     navigate("/book")
+   //    }
+   //
+   //    } catch(e) {
+   //      console.log(e)
+   //    }
+   //   }
+   //   verifyAdmin()
+   // },[])
  
    useEffect(() => {
     const getAvailableBooks = async () => {
@@ -156,7 +158,7 @@ const AdminDashboaed = (props) => {
                     className="admin-dashboaed-menu-dashboard"
                   />
                   <span className="admin-dashboaed-text ParagraphButtontext">
-                    <span>Dashboard</span>
+                    <span>Flights</span>
                   </span>
                   <img
                     src="/playground_assets/rectangle5i935-fo1s-200w.png"
@@ -181,17 +183,7 @@ const AdminDashboaed = (props) => {
                     </div>
                   </div>
                   <span className="admin-dashboaed-text04 ParagraphBody">
-                    <span>Bookings</span>
-                  </span>
-                </div>
-                <div className="admin-dashboaed-menu5">
-                  <img
-                    src="/playground_assets/menusettingsi935-u7o.svg"
-                    alt="MenuSettingsI935"
-                    className="admin-dashboaed-menu-settings"
-                  />
-                  <span className="admin-dashboaed-text08 ParagraphBody">
-                    <span>Settings</span>
+                    <span><Link  to="/bookings">Bookings</Link></span>
                   </span>
                 </div>
               </div>
@@ -219,6 +211,9 @@ const AdminDashboaed = (props) => {
             </div>
           </div>
         </div>
+        {/*Navbar End*/}
+
+
         <div className="admin-dashboaed-car-availablity">
           <div className="admin-dashboaed-header">
             <span className="admin-dashboaed-text12 HeaderH4">
@@ -309,70 +304,6 @@ const AdminDashboaed = (props) => {
               </span>
             </button>
           </div>
-        </div>
-
-        <div className="admin-dashboaed-live-flight-status">
-          <div className="admin-dashboaed-live-car-status">
-            <div className="admin-dashboaed-header1">
-              <div className="admin-dashboaed-frame40248">
-                <span className="admin-dashboaed-text24 HeaderH4">
-                  <span> User Status</span>
-                </span>
-                <div className="admin-dashboaed-filter">
-                  <img
-                    src="/playground_assets/filteri936-gae.svg"
-                    alt="FilterI936"
-                    className="admin-dashboaed-filter1"
-                  />
-                  <div className="admin-dashboaed-frame40058">
-                    <span className="admin-dashboaed-text26 ParagraphButtontext">
-                      <span>Filter</span>
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div className="admin-dashboaed-frame40191">
-                <div className="admin-dashboaed-frame40190">
-                  <div className="admin-dashboaed-frame40189">
-                    <div className="admin-dashboaed-frame40188">
-                      <span className="admin-dashboaed-text28">
-                        <span>No.</span>
-                      </span>
-                      <span className="admin-dashboaed-text30 Paragraph">
-                        <span>Plane</span>
-                      </span>
-                    </div>
-                    <span className="admin-dashboaed-text32 Paragraph">
-                      <span>User</span>
-                    </span>
-                  </div>
-                  <span className="admin-dashboaed-text34 Paragraph">
-                    <span>Seat</span>
-                  </span>
-                </div>
-                <span className="admin-dashboaed-text36 Paragraph">
-                  <span>Time</span>
-                </span>
-              </div>
-            </div>
-            {
-
-                availableBooks.map(book =>
-                  <Books
-                   planeNumber={book.flightNumber}
-                   displayName={book.displayName}
-                   seat={book.flightSeat}
-                   departureTime={book.departureTime}
-                  />
-                  )
-            }
-
-          </div>
-          <img
-            src="/playground_assets/scrollbar9367-mr5d-200w.png"
-            alt="Scrollbar9367"
-            className="admin-dashboaed-scrollbar"
-          />
         </div>
       </div>
     </div>

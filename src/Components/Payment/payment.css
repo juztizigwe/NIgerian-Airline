@@ -35,6 +35,7 @@
   flex-direction: column;
 }
 
+/*noinspection ALL*/
 .payment-text {
   color: rgba(0, 0, 0, 1);
   height: auto;
@@ -48,6 +49,8 @@
   font-stretch: normal;
   text-decoration: none;
 }
+
+/*noinspection ALL*/
 .subtitle {
   top: 48px;
   color: rgba(0, 0, 0, 1);
@@ -109,6 +112,8 @@
   border-radius: 5px;
   align-self: center;
 }
+
+/*noinspection ALL*/
 .payment-submit {
   color: rgba(255, 255, 255, 1);
   height: auto;

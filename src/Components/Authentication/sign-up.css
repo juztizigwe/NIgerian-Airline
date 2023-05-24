@@ -70,6 +70,8 @@
   align-items: flex-start;
   flex-shrink: 1;
 }
+
+/*noinspection ALL*/
 .sign-up-text {
   color: rgba(0, 0, 0, 1);
   height: auto;
@@ -83,6 +85,8 @@
   font-stretch: normal;
   text-decoration: none;
 }
+
+/*noinspection ALL*/
 .sign-up-text02 {
   top: 48px;
   color: rgba(0, 0, 0, 1);
@@ -98,6 +102,8 @@
   font-stretch: normal;
   text-decoration: none;
 }
+
+/*noinspection ALL*/
 .sign-up-text04 {
   color: rgba(0, 0, 0, 1);
   height: auto;
@@ -131,6 +137,8 @@
   align-items: flex-start;
   flex-shrink: 0;
 }
+
+/*noinspection ALL*/
 .sign-up-text06 {
   top: 6px;
   left: 1px;
@@ -168,6 +176,8 @@
   border-width: 0.6000000238418579px;
   border-radius: 6px;
 }
+
+/*noinspection ALL*/
 .sign-up-text08 {
   top: 19px;
   left: 13.14893627166748px;
@@ -204,6 +214,8 @@
   border-width: 0.6000000238418579px;
   border-radius: 6px;
 }
+
+/*noinspection ALL*/
 .sign-up-text10 {
   top: 19px;
   left: 13.14893627166748px;
@@ -229,6 +241,8 @@
   align-items: flex-start;
   flex-shrink: 0;
 }
+
+/*noinspection ALL*/
 .sign-up-text12 {
   top: 6px;
   color: rgba(0, 0, 0, 1);
@@ -265,6 +279,8 @@
   border-width: 0.6000000238418579px;
   border-radius: 6px;
 }
+
+/*noinspection ALL*/
 .sign-up-text14 {
   top: 19px;
   left: 13.14893627166748px;
@@ -280,6 +296,8 @@
   font-stretch: normal;
   text-decoration: none;
 }
+
+/*noinspection ALL*/
 .sign-up-text16 {
   top: 6px;
   left: 217px;
@@ -317,6 +335,8 @@
   border-width: 0.6000000238418579px;
   border-radius: 6px;
 }
+
+/*noinspection ALL*/
 .sign-up-text18 {
   top: 19px;
   left: 13.14893627166748px;
@@ -342,6 +362,8 @@
   align-items: flex-start;
   flex-shrink: 0;
 }
+
+/*noinspection ALL*/
 .sign-up-text20 {
   top: 6px;
   color: rgba(0, 0, 0, 1);
@@ -378,6 +400,8 @@
   border-width: 0.6000000238418579px;
   border-radius: 6px;
 }
+
+/*noinspection ALL*/
 .sign-up-text22 {
   top: 19px;
   left: 13.680908203125px;
@@ -413,6 +437,8 @@
   align-items: flex-start;
   flex-shrink: 0;
 }
+
+/*noinspection ALL*/
 .sign-up-text24 {
   top: 8px;
   color: rgba(0, 0, 0, 1);
@@ -439,6 +465,8 @@
   border-width: 0.6000000238418579px;
   border-radius: 6px;
 }
+
+/*noinspection ALL*/
 .sign-up-text26 {
   top: 57px;
   left: 12px;
@@ -475,6 +503,8 @@
   border-width: 0.6000000238418579px;
   border-radius: 6px;
 }
+
+/*noinspection ALL*/
 .sign-up-text28 {
   top: 24px;
   left: 227px;
@@ -625,6 +655,8 @@
   flex-shrink: 1;
   background-color: rgba(193, 28, 28, 1);
 }
+
+/*noinspection ALL*/
 .sign-up-text30 {
   top: 17px;
   left: 190px;
@@ -640,6 +672,8 @@
   font-stretch: normal;
   text-decoration: none;
 }
+
+/*noinspection ALL*/
 .sign-up-text32 {
   top: 665px;
   left: 115px;

@@ -66,6 +66,8 @@
   align-items: center;
   flex-direction: column;
 }
+
+/*noinspection ALL*/
 .flight-text {
   color: rgba(0, 0, 0, 1);
   height: auto;
@@ -78,6 +80,8 @@
   font-stretch: normal;
   text-decoration: none;
 }
+
+/*noinspection ALL*/
 .flight-text02 {
   color: rgba(79, 79, 79, 1);
   height: auto;
@@ -95,6 +99,8 @@
   align-items: center;
   flex-direction: column;
 }
+
+/*noinspection ALL*/
 .flight-text04 {
   color: rgba(79, 79, 79, 1);
   height: auto;
@@ -117,6 +123,8 @@
   flex-direction: column;
   margin-left: -12px;
 }
+
+/*noinspection ALL*/
 .flight-text06 {
   color: rgba(0, 0, 0, 1);
   height: auto;
@@ -129,6 +137,8 @@
   font-stretch: normal;
   text-decoration: none;
 }
+
+/*noinspection ALL*/
 .flight-text08 {
   color: rgba(79, 79, 79, 1);
   height: auto;
@@ -141,6 +151,8 @@
   font-stretch: normal;
   text-decoration: none;
 }
+
+/*noinspection ALL*/
 .flight-text10 {
   top: 36px;
   left: 378px;
@@ -169,6 +181,8 @@
 .flight-rectangle10 > span {
   color: white;
 }
+
+/*noinspection ALL*/
 .flight-text12 {
   
   color: rgba(255, 255, 255, 1);
@@ -209,6 +223,8 @@
   align-items: center;
   flex-direction: column;
 }
+
+/*noinspection ALL*/
 .flight-text14 {
   color: rgba(0, 0, 0, 1);
   height: auto;
@@ -221,6 +237,8 @@
   font-stretch: normal;
   text-decoration: none;
 }
+
+/*noinspection ALL*/
 .flight-text16 {
   color: rgba(79, 79, 79, 1);
   height: auto;
@@ -238,6 +256,8 @@
   align-items: center;
   flex-direction: column;
 }
+
+/*noinspection ALL*/
 .flight-text18 {
   color: rgba(79, 79, 79, 1);
   height: auto;
@@ -259,6 +279,8 @@
   align-items: center;
   flex-direction: column;
 }
+
+/*noinspection ALL*/
 .flight-text20 {
   color: rgba(0, 0, 0, 1);
   height: auto;
@@ -271,6 +293,8 @@
   font-stretch: normal;
   text-decoration: none;
 }
+
+/*noinspection ALL*/
 .flight-text22 {
   color: rgba(79, 79, 79, 1);
   height: auto;
@@ -283,6 +307,8 @@
   font-stretch: normal;
   text-decoration: none;
 }
+
+/*noinspection ALL*/
 .flight-text24 {
   top: 36px;
   left: 347px;
@@ -308,6 +334,8 @@
   background-color: #1D6411;
   cursor: pointer;
 }
+
+/*noinspection ALL*/
 .flight-text26 {
   top: 44px;
   left: 472px;
@@ -346,6 +374,8 @@
   align-items: center;
   flex-direction: column;
 }
+
+/*noinspection ALL*/
 .flight-text28 {
   color: rgba(0, 0, 0, 1);
   height: auto;
@@ -358,6 +388,8 @@
   font-stretch: normal;
   text-decoration: none;
 }
+
+/*noinspection ALL*/
 .flight-text30 {
   color: rgba(79, 79, 79, 1);
   height: auto;
@@ -375,6 +407,8 @@
   align-items: center;
   flex-direction: column;
 }
+
+/*noinspection ALL*/
 .flight-text32 {
   color: rgba(79, 79, 79, 1);
   height: auto;
@@ -396,6 +430,8 @@
   align-items: center;
   flex-direction: column;
 }
+
+/*noinspection ALL*/
 .flight-text34 {
   color: rgba(0, 0, 0, 1);
   height: auto;
@@ -408,6 +444,8 @@
   font-stretch: normal;
   text-decoration: none;
 }
+
+/*noinspection ALL*/
 .flight-text36 {
   color: rgba(79, 79, 79, 1);
   height: auto;
@@ -420,6 +458,8 @@
   font-stretch: normal;
   text-decoration: none;
 }
+
+/*noinspection ALL*/
 .flight-text38 {
   top: 36px;
   left: 347px;
@@ -445,6 +485,8 @@
   background-color: #1D6411;
   cursor: pointer;
 }
+
+/*noinspection ALL*/
 .flight-text40 {
   top: 44px;
   left: 472px;
@@ -483,6 +525,8 @@
   align-items: center;
   flex-direction: column;
 }
+
+/*noinspection ALL*/
 .flight-text42 {
   color: rgba(0, 0, 0, 1);
   height: auto;
@@ -495,6 +539,8 @@
   font-stretch: normal;
   text-decoration: none;
 }
+
+/*noinspection ALL*/
 .flight-text44 {
   color: rgba(79, 79, 79, 1);
   height: auto;
@@ -512,6 +558,8 @@
   align-items: center;
   flex-direction: column;
 }
+
+/*noinspection ALL*/
 .flight-text46 {
   color: rgba(79, 79, 79, 1);
   height: auto;
@@ -533,6 +581,8 @@
   align-items: center;
   flex-direction: column;
 }
+
+/*noinspection ALL*/
 .flight-text48 {
   color: rgba(0, 0, 0, 1);
   height: auto;
@@ -545,6 +595,8 @@
   font-stretch: normal;
   text-decoration: none;
 }
+
+/*noinspection ALL*/
 .flight-text50 {
   color: rgba(79, 79, 79, 1);
   height: auto;
@@ -557,6 +609,8 @@
   font-stretch: normal;
   text-decoration: none;
 }
+
+/*noinspection ALL*/
 .flight-text52 {
   top: 36px;
   left: 347px;
@@ -582,6 +636,8 @@
   background-color: #1D6411;
   cursor: pointer;
 }
+
+/*noinspection ALL*/
 .flight-text54 {
   top: 44px;
   left: 472px;
@@ -597,6 +653,8 @@
   font-stretch: normal;
   text-decoration: none;
 }
+
+/*noinspection ALL*/
 .flight-text56 {
   top: 54px;
   left: 59px;
